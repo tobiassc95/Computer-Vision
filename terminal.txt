@@ -1,0 +1,802 @@
+(tf) C:\Users\Tobias Scala\Documents\Visual Studio Code\mecatronica\object detection2>"C:/Users/Tobias Scala/anaconda3/envs/tf/python.exe" "c:/Users/Tobias Scala/Documents/Visual Studio Code/mecatronica/object detection2/trainmodel.py"
+Using TensorFlow backend.
+Generating anchor boxes for training images and annotation...
+Average IOU for 9 anchors: 0.77
+Anchor Boxes generated.
+Detection configuration saved in  EV3brickset\json\detection_config.json
+Training on:    ['EV3brick']
+Training with Batch Size:  8
+Number of Experiments:  50
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\imageai\Detection\Custom\yolo.py:24: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\imageai\Detection\Custom\yolo.py:149: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+Training with transfer learning from pretrained Model
+C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\callbacks\callbacks.py:998: UserWarning: `epsilon` argument is deprecated and will be removed, use `min_delta` instead.
+  warnings.warn('`epsilon` argument is deprecated and '
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\backend\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please 
+use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\backend\tensorflow_backend.py:431: The name tf.is_variable_initialized is deprecated. 
+Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\backend\tensorflow_backend.py:438: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\callbacks\tensorboard_v1.py:200: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\callbacks\tensorboard_v1.py:203: The name tf.summary.FileWriter is deprecated. Please 
+use tf.compat.v1.summary.FileWriter instead.
+
+Epoch 1/50
+libpng warning: sBIT: invalid
+ 12/104 [==>...........................] - ETA: 22:24 - loss: 168.2272 - yolo_layer_1_loss: 18.8181 - yolo_layer_2_loss: 42.1586 - yolo_layer_3_loss: 107.2505libpng warning: 
+sBIT: invalid
+ 25/104 [======>.......................] - ETA: 21:48 - loss: 165.3251 - yolo_layer_1_loss: 17.8472 - yolo_layer_2_loss: 41.5398 - yolo_layer_3_loss: 105.9381libpng warning: 
+sBIT: invalid
+ 38/104 [=========>....................] - ETA: 18:43 - loss: 149.2331 - yolo_layer_1_loss: 15.5254 - yolo_layer_2_loss: 37.5536 - yolo_layer_3_loss: 96.1541libpng warning: sBIT: invalid
+ 51/104 [=============>................] - ETA: 14:14 - loss: 131.0657 - yolo_layer_1_loss: 13.1655 - yolo_layer_2_loss: 32.8442 - yolo_layer_3_loss: 85.0560libpng warning: sBIT: invalid
+ 66/104 [==================>...........] - ETA: 10:59 - loss: 118.2546 - yolo_layer_1_loss: 11.6266 - yolo_layer_2_loss: 29.3950 - yolo_layer_3_loss: 77.2331libpng warning: sBIT: invalid
+ 77/104 [=====================>........] - ETA: 7:38 - loss: 108.6948 - yolo_layer_1_loss: 10.5571 - yolo_layer_2_loss: 27.0173 - yolo_layer_3_loss: 71.1204libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:48 - loss: 99.1658 - yolo_layer_1_loss: 9.3529 - yolo_layer_2_loss: 24.7398 - yolo_layer_3_loss: 65.0731libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 16s - loss: 92.5248 - yolo_layer_1_loss: 8.8095 - yolo_layer_2_loss: 23.1114 - yolo_layer_3_loss: 60.6039libpng warning: sBIT: invalid
+104/104 [==============================] - 2040s 20s/step - loss: 92.0217 - yolo_layer_1_loss: 8.7563 - yolo_layer_2_loss: 22.9896 - yolo_layer_3_loss: 60.2758 - val_loss: 53.1941 - val_yolo_layer_1_loss: 4.6205 - val_yolo_layer_2_loss: 10.7244 - val_yolo_layer_3_loss: 29.1144
+WARNING:tensorflow:From C:\Users\Tobias Scala\anaconda3\envs\tf\lib\site-packages\keras\callbacks\tensorboard_v1.py:343: The name tf.Summary is deprecated. Please use tf.compat.v1.Summary instead.
+
+Epoch 2/50
+ 12/104 [==>...........................] - ETA: 32:52 - loss: 41.3373 - yolo_layer_1_loss: 5.6264 - yolo_layer_2_loss: 10.2334 - yolo_layer_3_loss: 25.4774libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 28:54 - loss: 38.3754 - yolo_layer_1_loss: 4.8090 - yolo_layer_2_loss: 10.0728 - yolo_layer_3_loss: 23.4936libpng warning: sBIT: invalid
+ 42/104 [===========>..................] - ETA: 22:14 - loss: 36.0296 - yolo_layer_1_loss: 4.4475 - yolo_layer_2_loss: 9.5901 - yolo_layer_3_loss: 21.9920libpng warning: sBIT: invalid
+ 51/104 [=============>................] - ETA: 18:13 - loss: 34.5755 - yolo_layer_1_loss: 4.0993 - yolo_layer_2_loss: 9.2878 - yolo_layer_3_loss: 21.1884libpng warning: sBIT: invalid
+libpng warning: sBIT: invalid
+ 65/104 [=================>............] - ETA: 12:17 - loss: 32.6073 - yolo_layer_1_loss: 3.5595 - yolo_layer_2_loss: 8.9449 - yolo_layer_3_loss: 20.1028libpng warning: sBIT: invalid
+ 78/104 [=====================>........] - ETA: 8:05 - loss: 31.4545 - yolo_layer_1_loss: 3.5007 - yolo_layer_2_loss: 8.6820 - yolo_layer_3_loss: 19.2718libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:25 - loss: 30.8854 - yolo_layer_1_loss: 3.5452 - yolo_layer_2_loss: 8.5462 - yolo_layer_3_loss: 18.7939libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 18s - loss: 29.7189 - yolo_layer_1_loss: 3.1630 - yolo_layer_2_loss: 8.3255 - yolo_layer_3_loss: 18.2304libpng warning: sBIT: 
+invalid
+104/104 [==============================] - 2113s 20s/step - loss: 29.6492 - yolo_layer_1_loss: 3.1362 - yolo_layer_2_loss: 8.3049 - yolo_layer_3_loss: 18.2082 - val_loss: 23.5952 - val_yolo_layer_1_loss: 1.6968 - val_yolo_layer_2_loss: 6.5318 - val_yolo_layer_3_loss: 14.9121
+Epoch 3/50
+ 12/104 [==>...........................] - ETA: 23:53 - loss: 23.5365 - yolo_layer_1_loss: 3.0769 - yolo_layer_2_loss: 6.6112 - yolo_layer_3_loss: 13.8484libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 24:32 - loss: 22.9812 - yolo_layer_1_loss: 3.0398 - yolo_layer_2_loss: 6.3715 - yolo_layer_3_loss: 13.5699libpng warning: sBIT: invalid
+ 42/104 [===========>..................] - ETA: 20:44 - loss: 22.8155 - yolo_layer_1_loss: 2.7971 - yolo_layer_2_loss: 6.2575 - yolo_layer_3_loss: 13.7609libpng warning: sBIT: invalid
+ 53/104 [==============>...............] - ETA: 17:14 - loss: 22.8282 - yolo_layer_1_loss: 2.8406 - yolo_layer_2_loss: 6.1945 - yolo_layer_3_loss: 13.7931libpng warning: sBIT: invalid
+ 64/104 [=================>............] - ETA: 13:10 - loss: 22.3789 - yolo_layer_1_loss: 2.6045 - yolo_layer_2_loss: 6.1976 - yolo_layer_3_loss: 13.5767libpng warning: sBIT: invalid
+ 81/104 [======================>.......] - ETA: 7:55 - loss: 22.5867 - yolo_layer_1_loss: 2.7580 - yolo_layer_2_loss: 6.2664 - yolo_layer_3_loss: 13.5624libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:40 - loss: 22.3039 - yolo_layer_1_loss: 2.6314 - yolo_layer_2_loss: 6.2034 - yolo_layer_3_loss: 13.4691libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 22.1815 - yolo_layer_1_loss: 2.5182 - yolo_layer_2_loss: 6.2373 - yolo_layer_3_loss: 13.4260libpng warning: sBIT: 
+invalid
+104/104 [==============================] - 2276s 22s/step - loss: 22.1940 - yolo_layer_1_loss: 2.5418 - yolo_layer_2_loss: 6.2562 - yolo_layer_3_loss: 13.3960 - val_loss: 21.2562 - val_yolo_layer_1_loss: 1.2747 - val_yolo_layer_2_loss: 5.7660 - val_yolo_layer_3_loss: 9.9497
+Epoch 4/50
+ 12/104 [==>...........................] - ETA: 33:00 - loss: 21.9994 - yolo_layer_1_loss: 3.4830 - yolo_layer_2_loss: 6.4816 - yolo_layer_3_loss: 12.0348libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 23:56 - loss: 20.3372 - yolo_layer_1_loss: 2.8067 - yolo_layer_2_loss: 5.7656 - yolo_layer_3_loss: 11.7650libpng warning: sBIT: invalid
+ 38/104 [=========>....................] - ETA: 20:19 - loss: 19.7250 - yolo_layer_1_loss: 2.4772 - yolo_layer_2_loss: 5.7065 - yolo_layer_3_loss: 11.5413libpng warning: sBIT: invalid
+ 51/104 [=============>................] - ETA: 16:37 - loss: 19.0488 - yolo_layer_1_loss: 2.1938 - yolo_layer_2_loss: 5.4994 - yolo_layer_3_loss: 11.3557libpng warning: sBIT: invalid
+ 64/104 [=================>............] - ETA: 12:48 - loss: 18.5550 - yolo_layer_1_loss: 2.2727 - yolo_layer_2_loss: 5.2144 - yolo_layer_3_loss: 11.0680libpng warning: sBIT: invalid
+ 77/104 [=====================>........] - ETA: 8:46 - loss: 17.9927 - yolo_layer_1_loss: 2.3091 - yolo_layer_2_loss: 4.9847 - yolo_layer_3_loss: 10.6988libpng warning: sBIT: invalid
+ 93/104 [=========================>....] - ETA: 3:20 - loss: 17.1337 - yolo_layer_1_loss: 2.0275 - yolo_layer_2_loss: 4.8050 - yolo_layer_3_loss: 10.3011libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 18s - loss: 16.9989 - yolo_layer_1_loss: 2.0782 - yolo_layer_2_loss: 4.7808 - yolo_layer_3_loss: 10.1400libpng warning: sBIT: 
+invalid
+104/104 [==============================] - 2169s 21s/step - loss: 16.9698 - yolo_layer_1_loss: 2.0929 - yolo_layer_2_loss: 4.7631 - yolo_layer_3_loss: 10.1138 - val_loss: 15.0851 - val_yolo_layer_1_loss: 1.1152 - val_yolo_layer_2_loss: 4.6270 - val_yolo_layer_3_loss: 7.7563
+Epoch 5/50
+ 15/104 [===>..........................] - ETA: 24:24 - loss: 13.9333 - yolo_layer_1_loss: 1.4968 - yolo_layer_2_loss: 4.1719 - yolo_layer_3_loss: 8.2647libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 20:37 - loss: 13.8638 - yolo_layer_1_loss: 1.3842 - yolo_layer_2_loss: 4.1922 - yolo_layer_3_loss: 8.2874libpng warning: sBIT: invalid
+ 41/104 [==========>...................] - ETA: 17:23 - loss: 13.8504 - yolo_layer_1_loss: 1.6902 - yolo_layer_2_loss: 3.8898 - yolo_layer_3_loss: 8.2704libpng warning: sBIT: invalid
+ 51/104 [=============>................] - ETA: 13:57 - loss: 13.6684 - yolo_layer_1_loss: 1.6946 - yolo_layer_2_loss: 3.8333 - yolo_layer_3_loss: 8.1404libpng warning: sBIT: invalid
+ 64/104 [=================>............] - ETA: 11:38 - loss: 13.7090 - yolo_layer_1_loss: 1.7904 - yolo_layer_2_loss: 3.8997 - yolo_layer_3_loss: 8.0189libpng warning: sBIT: invalid
+ 77/104 [=====================>........] - ETA: 8:15 - loss: 13.8068 - yolo_layer_1_loss: 1.8507 - yolo_layer_2_loss: 3.9372 - yolo_layer_3_loss: 8.0188libpng warning: sBIT: 
+invalid
+ 90/104 [========================>.....] - ETA: 4:24 - loss: 13.8215 - yolo_layer_1_loss: 1.8181 - yolo_layer_2_loss: 3.8318 - yolo_layer_3_loss: 8.1716libpng warning: sBIT: 
+invalid
+103/104 [============================>.] - ETA: 18s - loss: 13.8347 - yolo_layer_1_loss: 1.8261 - yolo_layer_2_loss: 3.8880 - yolo_layer_3_loss: 8.1206libpng warning: sBIT: invalid
+104/104 [==============================] - 2191s 21s/step - loss: 13.8391 - yolo_layer_1_loss: 1.8371 - yolo_layer_2_loss: 3.8816 - yolo_layer_3_loss: 8.1204 - val_loss: 15.2413 - val_yolo_layer_1_loss: 1.0721 - val_yolo_layer_2_loss: 3.6257 - val_yolo_layer_3_loss: 8.6538
+Epoch 6/50
+ 12/104 [==>...........................] - ETA: 32:38 - loss: 13.7890 - yolo_layer_1_loss: 2.5020 - yolo_layer_2_loss: 4.1236 - yolo_layer_3_loss: 7.1634libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 29:27 - loss: 13.9609 - yolo_layer_1_loss: 2.5718 - yolo_layer_2_loss: 3.8705 - yolo_layer_3_loss: 7.5187libpng warning: sBIT: invalid
+ 42/104 [===========>..................] - ETA: 20:19 - loss: 13.2899 - yolo_layer_1_loss: 2.1402 - yolo_layer_2_loss: 3.6493 - yolo_layer_3_loss: 7.5004libpng warning: sBIT: invalid
+ 52/104 [==============>...............] - ETA: 16:24 - loss: 12.9389 - yolo_layer_1_loss: 1.9713 - yolo_layer_2_loss: 3.5954 - yolo_layer_3_loss: 7.3722libpng warning: sBIT: invalid
+ 64/104 [=================>............] - ETA: 12:17 - loss: 12.8441 - yolo_layer_1_loss: 1.9369 - yolo_layer_2_loss: 3.5705 - yolo_layer_3_loss: 7.3368libpng warning: sBIT: invalid
+ 77/104 [=====================>........] - ETA: 8:18 - loss: 12.7539 - yolo_layer_1_loss: 1.9035 - yolo_layer_2_loss: 3.5071 - yolo_layer_3_loss: 7.3433libpng warning: sBIT: 
+invalid
+ 90/104 [========================>.....] - ETA: 4:05 - loss: 12.4588 - yolo_layer_1_loss: 1.6928 - yolo_layer_2_loss: 3.4048 - yolo_layer_3_loss: 7.3612libpng warning: sBIT: 
+invalid
+103/104 [============================>.] - ETA: 18s - loss: 12.4672 - yolo_layer_1_loss: 1.7431 - yolo_layer_2_loss: 3.4322 - yolo_layer_3_loss: 7.2919libpng warning: sBIT: invalid
+104/104 [==============================] - 2154s 21s/step - loss: 12.4712 - yolo_layer_1_loss: 1.7533 - yolo_layer_2_loss: 3.4246 - yolo_layer_3_loss: 7.2933 - val_loss: 10.4397 - val_yolo_layer_1_loss: 0.9918 - val_yolo_layer_2_loss: 2.8303 - val_yolo_layer_3_loss: 5.4256
+Epoch 7/50
+ 15/104 [===>..........................] - ETA: 35:41 - loss: 12.7068 - yolo_layer_1_loss: 1.7617 - yolo_layer_2_loss: 3.7068 - yolo_layer_3_loss: 7.2383libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 30:30 - loss: 12.3819 - yolo_layer_1_loss: 1.7656 - yolo_layer_2_loss: 3.4102 - yolo_layer_3_loss: 7.2061libpng warning: sBIT: invalid
+ 38/104 [=========>....................] - ETA: 24:07 - loss: 12.3336 - yolo_layer_1_loss: 1.8929 - yolo_layer_2_loss: 3.3763 - yolo_layer_3_loss: 7.0643libpng warning: sBIT: invalid
+ 51/104 [=============>................] - ETA: 18:36 - loss: 11.8967 - yolo_layer_1_loss: 1.7434 - yolo_layer_2_loss: 3.3086 - yolo_layer_3_loss: 6.8447libpng warning: sBIT: invalid
+ 65/104 [=================>............] - ETA: 13:34 - loss: 11.7316 - yolo_layer_1_loss: 1.7630 - yolo_layer_2_loss: 3.3024 - yolo_layer_3_loss: 6.6662libpng warning: sBIT: invalid
+ 77/104 [=====================>........] - ETA: 9:00 - loss: 11.6453 - yolo_layer_1_loss: 1.7975 - yolo_layer_2_loss: 3.3237 - yolo_layer_3_loss: 6.5241libpng warning: sBIT: 
+invalid
+ 90/104 [========================>.....] - ETA: 4:24 - loss: 11.3850 - yolo_layer_1_loss: 1.6503 - yolo_layer_2_loss: 3.2674 - yolo_layer_3_loss: 6.4673libpng warning: sBIT: 
+invalid
+103/104 [============================>.] - ETA: 19s - loss: 11.3957 - yolo_layer_1_loss: 1.7370 - yolo_layer_2_loss: 3.2505 - yolo_layer_3_loss: 6.4081libpng warning: sBIT: invalid
+104/104 [==============================] - 2296s 22s/step - loss: 11.4049 - yolo_layer_1_loss: 1.7442 - yolo_layer_2_loss: 3.2525 - yolo_layer_3_loss: 6.4082 - val_loss: 9.3115 - val_yolo_layer_1_loss: 1.6015 - val_yolo_layer_2_loss: 3.3565 - val_yolo_layer_3_loss: 5.6479
+Epoch 8/50
+ 12/104 [==>...........................] - ETA: 21:32 - loss: 9.2709 - yolo_layer_1_loss: 0.9267 - yolo_layer_2_loss: 2.5642 - yolo_layer_3_loss: 5.7800libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 21:51 - loss: 9.5059 - yolo_layer_1_loss: 1.2382 - yolo_layer_2_loss: 2.7564 - yolo_layer_3_loss: 5.5113libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 20:12 - loss: 9.9756 - yolo_layer_1_loss: 1.5034 - yolo_layer_2_loss: 2.9753 - yolo_layer_3_loss: 5.4970libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:21 - loss: 10.0116 - yolo_layer_1_loss: 1.8069 - yolo_layer_2_loss: 3.0457 - yolo_layer_3_loss: 5.1590libpng warning: sBIT: invalid
+ 64/104 [=================>............] - ETA: 12:17 - loss: 9.5174 - yolo_layer_1_loss: 1.6071 - yolo_layer_2_loss: 2.9302 - yolo_layer_3_loss: 4.9801libpng warning: sBIT: 
+invalid
+ 80/104 [======================>.......] - ETA: 7:08 - loss: 9.4103 - yolo_layer_1_loss: 1.5137 - yolo_layer_2_loss: 2.8916 - yolo_layer_3_loss: 5.0050libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 3:48 - loss: 9.3468 - yolo_layer_1_loss: 1.4383 - yolo_layer_2_loss: 2.9080 - yolo_layer_3_loss: 5.0005libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 18s - loss: 9.3264 - yolo_layer_1_loss: 1.5068 - yolo_layer_2_loss: 2.9400 - yolo_layer_3_loss: 4.8796libpng warning: sBIT: invalid
+104/104 [==============================] - 2181s 21s/step - loss: 9.3167 - yolo_layer_1_loss: 1.5185 - yolo_layer_2_loss: 2.9378 - yolo_layer_3_loss: 4.8604 - val_loss: 8.6028 - val_yolo_layer_1_loss: 1.1804 - val_yolo_layer_2_loss: 3.5350 - val_yolo_layer_3_loss: 4.8683
+Epoch 9/50
+ 12/104 [==>...........................] - ETA: 36:18 - loss: 9.7060 - yolo_layer_1_loss: 2.1510 - yolo_layer_2_loss: 3.5974 - yolo_layer_3_loss: 3.9577libpng warning: sBIT: 
+invalid
+ 28/104 [=======>......................] - ETA: 31:03 - loss: 9.5814 - yolo_layer_1_loss: 2.2951 - yolo_layer_2_loss: 3.2951 - yolo_layer_3_loss: 3.9912libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 26:07 - loss: 9.5512 - yolo_layer_1_loss: 2.2414 - yolo_layer_2_loss: 3.2996 - yolo_layer_3_loss: 4.0102libpng warning: sBIT: 
+invalid
+ 54/104 [==============>...............] - ETA: 17:19 - loss: 9.1204 - yolo_layer_1_loss: 1.8522 - yolo_layer_2_loss: 3.2614 - yolo_layer_3_loss: 4.0067libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 12:57 - loss: 8.8078 - yolo_layer_1_loss: 1.6659 - yolo_layer_2_loss: 3.1542 - yolo_layer_3_loss: 3.9876libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 7:21 - loss: 8.5909 - yolo_layer_1_loss: 1.6913 - yolo_layer_2_loss: 3.0361 - yolo_layer_3_loss: 3.8635libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 4:11 - loss: 8.5755 - yolo_layer_1_loss: 1.6824 - yolo_layer_2_loss: 3.0027 - yolo_layer_3_loss: 3.8904libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 8.4781 - yolo_layer_1_loss: 1.6869 - yolo_layer_2_loss: 2.9343 - yolo_layer_3_loss: 3.8570libpng warning: sBIT: invalid
+104/104 [==============================] - 2290s 22s/step - loss: 8.4576 - yolo_layer_1_loss: 1.6905 - yolo_layer_2_loss: 2.9254 - yolo_layer_3_loss: 3.8417 - val_loss: 6.0267 - val_yolo_layer_1_loss: 0.9275 - val_yolo_layer_2_loss: 2.3899 - val_yolo_layer_3_loss: 3.7586
+Epoch 10/50
+ 12/104 [==>...........................] - ETA: 28:07 - loss: 8.4534 - yolo_layer_1_loss: 1.6253 - yolo_layer_2_loss: 3.1686 - yolo_layer_3_loss: 3.6595libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 22:16 - loss: 7.5440 - yolo_layer_1_loss: 1.3328 - yolo_layer_2_loss: 2.8097 - yolo_layer_3_loss: 3.4015libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 18:40 - loss: 7.8083 - yolo_layer_1_loss: 1.3879 - yolo_layer_2_loss: 2.8240 - yolo_layer_3_loss: 3.5964libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:27 - loss: 7.7130 - yolo_layer_1_loss: 1.4159 - yolo_layer_2_loss: 2.7746 - yolo_layer_3_loss: 3.5226libpng warning: sBIT: 
+invalid
+ 68/104 [==================>...........] - ETA: 10:25 - loss: 7.5989 - yolo_layer_1_loss: 1.3894 - yolo_layer_2_loss: 2.7826 - yolo_layer_3_loss: 3.4268libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:36 - loss: 7.6580 - yolo_layer_1_loss: 1.4266 - yolo_layer_2_loss: 2.7262 - yolo_layer_3_loss: 3.5051libpng warning: sBIT: invalid
+ 92/104 [=========================>....] - ETA: 3:19 - loss: 7.8873 - yolo_layer_1_loss: 1.4630 - yolo_layer_2_loss: 2.7901 - yolo_layer_3_loss: 3.6342libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 17s - loss: 7.8738 - yolo_layer_1_loss: 1.4808 - yolo_layer_2_loss: 2.7777 - yolo_layer_3_loss: 3.6153libpng warning: sBIT: invalid
+104/104 [==============================] - 2009s 19s/step - loss: 7.8411 - yolo_layer_1_loss: 1.4766 - yolo_layer_2_loss: 2.7628 - yolo_layer_3_loss: 3.6016 - val_loss: 5.6948 - val_yolo_layer_1_loss: 0.6465 - val_yolo_layer_2_loss: 1.8081 - val_yolo_layer_3_loss: 3.2471
+Epoch 11/50
+ 12/104 [==>...........................] - ETA: 23:07 - loss: 7.2472 - yolo_layer_1_loss: 1.3496 - yolo_layer_2_loss: 2.3751 - yolo_layer_3_loss: 3.5225libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 20:30 - loss: 6.9396 - yolo_layer_1_loss: 1.1388 - yolo_layer_2_loss: 2.4212 - yolo_layer_3_loss: 3.3796libpng warning: sBIT: 
+invalid
+ 41/104 [==========>...................] - ETA: 16:48 - loss: 7.2192 - yolo_layer_1_loss: 1.1683 - yolo_layer_2_loss: 2.5426 - yolo_layer_3_loss: 3.5084libpng warning: sBIT: 
+invalid
+ 52/104 [==============>...............] - ETA: 14:33 - loss: 7.5404 - yolo_layer_1_loss: 1.3783 - yolo_layer_2_loss: 2.4968 - yolo_layer_3_loss: 3.6654libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:47 - loss: 7.7063 - yolo_layer_1_loss: 1.4894 - yolo_layer_2_loss: 2.5887 - yolo_layer_3_loss: 3.6283libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:50 - loss: 7.5848 - yolo_layer_1_loss: 1.4190 - yolo_layer_2_loss: 2.5992 - yolo_layer_3_loss: 3.5667libpng warning: sBIT: invalid
+ 94/104 [==========================>...] - ETA: 2:58 - loss: 7.7375 - yolo_layer_1_loss: 1.5796 - yolo_layer_2_loss: 2.5396 - yolo_layer_3_loss: 3.6183libpng warning: sBIT: invalid
+104/104 [==============================] - 2125s 20s/step - loss: 7.7822 - yolo_layer_1_loss: 1.6412 - yolo_layer_2_loss: 2.6225 - yolo_layer_3_loss: 3.5185 - val_loss: 8.0638 - val_yolo_layer_1_loss: 0.9364 - val_yolo_layer_2_loss: 2.4266 - val_yolo_layer_3_loss: 4.0207
+Epoch 12/50
+libpng warning: sBIT: invalid
+ 15/104 [===>..........................] - ETA: 28:28 - loss: 7.3535 - yolo_layer_1_loss: 1.9315 - yolo_layer_2_loss: 2.3393 - yolo_layer_3_loss: 3.0827libpng warning: sBIT: 
+invalid
+ 28/104 [=======>......................] - ETA: 21:03 - loss: 6.9465 - yolo_layer_1_loss: 1.3627 - yolo_layer_2_loss: 2.2938 - yolo_layer_3_loss: 3.2900libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 16:49 - loss: 6.8518 - yolo_layer_1_loss: 1.1613 - yolo_layer_2_loss: 2.2507 - yolo_layer_3_loss: 3.4398libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 13:12 - loss: 6.8653 - yolo_layer_1_loss: 1.0469 - yolo_layer_2_loss: 2.2495 - yolo_layer_3_loss: 3.5689libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 10:21 - loss: 6.7841 - yolo_layer_1_loss: 1.0281 - yolo_layer_2_loss: 2.2960 - yolo_layer_3_loss: 3.4600libpng warning: sBIT: 
+invalid
+ 78/104 [=====================>........] - ETA: 7:20 - loss: 6.8670 - yolo_layer_1_loss: 1.2828 - yolo_layer_2_loss: 2.3144 - yolo_layer_3_loss: 3.2698libpng warning: sBIT: invalid
+ 92/104 [=========================>....] - ETA: 3:33 - loss: 6.9399 - yolo_layer_1_loss: 1.2944 - yolo_layer_2_loss: 2.3626 - yolo_layer_3_loss: 3.2829libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 17s - loss: 6.8245 - yolo_layer_1_loss: 1.2217 - yolo_layer_2_loss: 2.3509 - yolo_layer_3_loss: 3.2518libpng warning: sBIT: invalid
+104/104 [==============================] - 2069s 20s/step - loss: 6.8321 - yolo_layer_1_loss: 1.2343 - yolo_layer_2_loss: 2.3570 - yolo_layer_3_loss: 3.2408 - val_loss: 6.5080 - val_yolo_layer_1_loss: 0.8843 - val_yolo_layer_2_loss: 2.8919 - val_yolo_layer_3_loss: 3.0395
+Epoch 13/50
+ 12/104 [==>...........................] - ETA: 26:21 - loss: 6.6660 - yolo_layer_1_loss: 1.0257 - yolo_layer_2_loss: 2.4346 - yolo_layer_3_loss: 3.2057libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 21:31 - loss: 6.4596 - yolo_layer_1_loss: 0.8207 - yolo_layer_2_loss: 2.5429 - yolo_layer_3_loss: 3.0960libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 18:24 - loss: 6.9972 - yolo_layer_1_loss: 0.9390 - yolo_layer_2_loss: 2.5176 - yolo_layer_3_loss: 3.5407libpng warning: sBIT: 
+invalid
+ 53/104 [==============>...............] - ETA: 13:38 - loss: 6.8295 - yolo_layer_1_loss: 0.9334 - yolo_layer_2_loss: 2.3098 - yolo_layer_3_loss: 3.5864libpng warning: sBIT: 
+invalid
+ 65/104 [=================>............] - ETA: 10:31 - loss: 6.6430 - yolo_layer_1_loss: 0.9323 - yolo_layer_2_loss: 2.2768 - yolo_layer_3_loss: 3.4339libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:47 - loss: 6.5300 - yolo_layer_1_loss: 1.0471 - yolo_layer_2_loss: 2.2017 - yolo_layer_3_loss: 3.2812libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:13 - loss: 6.7698 - yolo_layer_1_loss: 1.1605 - yolo_layer_2_loss: 2.3190 - yolo_layer_3_loss: 3.2903libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 17s - loss: 6.6878 - yolo_layer_1_loss: 1.1512 - yolo_layer_2_loss: 2.3094 - yolo_layer_3_loss: 3.2272libpng warning: sBIT: invalid
+104/104 [==============================] - 2121s 20s/step - loss: 6.6860 - yolo_layer_1_loss: 1.1571 - yolo_layer_2_loss: 2.3198 - yolo_layer_3_loss: 3.2091 - val_loss: 5.3601 - val_yolo_layer_1_loss: 0.8908 - val_yolo_layer_2_loss: 3.0118 - val_yolo_layer_3_loss: 3.2142
+Epoch 14/50
+ 15/104 [===>..........................] - ETA: 34:33 - loss: 6.8229 - yolo_layer_1_loss: 1.7343 - yolo_layer_2_loss: 2.7617 - yolo_layer_3_loss: 2.3269libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 24:26 - loss: 6.3569 - yolo_layer_1_loss: 1.2290 - yolo_layer_2_loss: 2.5489 - yolo_layer_3_loss: 2.5791libpng warning: sBIT: 
+invalid
+ 40/104 [==========>...................] - ETA: 19:15 - loss: 6.7586 - yolo_layer_1_loss: 1.1985 - yolo_layer_2_loss: 2.5886 - yolo_layer_3_loss: 2.9715libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 16:01 - loss: 6.8752 - yolo_layer_1_loss: 1.2134 - yolo_layer_2_loss: 2.5341 - yolo_layer_3_loss: 3.1277libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:15 - loss: 6.8199 - yolo_layer_1_loss: 1.2081 - yolo_layer_2_loss: 2.3424 - yolo_layer_3_loss: 3.2694libpng warning: sBIT: 
+invalid
+ 80/104 [======================>.......] - ETA: 6:34 - loss: 6.7951 - yolo_layer_1_loss: 1.1930 - yolo_layer_2_loss: 2.3326 - yolo_layer_3_loss: 3.2695libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:42 - loss: 6.8332 - yolo_layer_1_loss: 1.0956 - yolo_layer_2_loss: 2.4119 - yolo_layer_3_loss: 3.3256libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 15s - loss: 6.7880 - yolo_layer_1_loss: 1.0772 - yolo_layer_2_loss: 2.3751 - yolo_layer_3_loss: 3.3357libpng warning: sBIT: invalid
+104/104 [==============================] - 1908s 18s/step - loss: 6.8533 - yolo_layer_1_loss: 1.1106 - yolo_layer_2_loss: 2.3832 - yolo_layer_3_loss: 3.3595 - val_loss: 7.7204 - val_yolo_layer_1_loss: 1.3514 - val_yolo_layer_2_loss: 2.7122 - val_yolo_layer_3_loss: 3.2916
+Epoch 15/50
+ 13/104 [==>...........................] - ETA: 30:47 - loss: 7.9534 - yolo_layer_1_loss: 1.7257 - yolo_layer_2_loss: 2.2093 - yolo_layer_3_loss: 4.0183libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 25:26 - loss: 7.7017 - yolo_layer_1_loss: 1.5188 - yolo_layer_2_loss: 2.3024 - yolo_layer_3_loss: 3.8806libpng warning: sBIT: 
+invalid
+ 39/104 [==========>...................] - ETA: 19:47 - loss: 7.4866 - yolo_layer_1_loss: 1.4369 - yolo_layer_2_loss: 2.3961 - yolo_layer_3_loss: 3.6536libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:14 - loss: 7.1780 - yolo_layer_1_loss: 1.3217 - yolo_layer_2_loss: 2.4091 - yolo_layer_3_loss: 3.4472libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:17 - loss: 7.0925 - yolo_layer_1_loss: 1.2750 - yolo_layer_2_loss: 2.3837 - yolo_layer_3_loss: 3.4337libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 6:40 - loss: 6.8444 - yolo_layer_1_loss: 1.2435 - yolo_layer_2_loss: 2.3128 - yolo_layer_3_loss: 3.2881libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:57 - loss: 6.6572 - yolo_layer_1_loss: 1.1511 - yolo_layer_2_loss: 2.2161 - yolo_layer_3_loss: 3.2900libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 16s - loss: 6.6289 - yolo_layer_1_loss: 1.1571 - yolo_layer_2_loss: 2.2115 - yolo_layer_3_loss: 3.2602libpng warning: sBIT: invalid
+104/104 [==============================] - 1981s 19s/step - loss: 6.6290 - yolo_layer_1_loss: 1.1462 - yolo_layer_2_loss: 2.2109 - yolo_layer_3_loss: 3.2718 - val_loss: 5.5100 - val_yolo_layer_1_loss: 0.6869 - val_yolo_layer_2_loss: 1.7728 - val_yolo_layer_3_loss: 3.1129
+Epoch 16/50
+ 12/104 [==>...........................] - ETA: 19:50 - loss: 5.3263 - yolo_layer_1_loss: 0.3866 - yolo_layer_2_loss: 2.4414 - yolo_layer_3_loss: 2.4984libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 19:52 - loss: 5.5244 - yolo_layer_1_loss: 0.6790 - yolo_layer_2_loss: 2.1356 - yolo_layer_3_loss: 2.7098libpng warning: sBIT: 
+invalid
+ 41/104 [==========>...................] - ETA: 16:12 - loss: 5.5633 - yolo_layer_1_loss: 0.6049 - yolo_layer_2_loss: 2.0194 - yolo_layer_3_loss: 2.9391libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 14:34 - loss: 5.9127 - yolo_layer_1_loss: 0.7914 - yolo_layer_2_loss: 2.0912 - yolo_layer_3_loss: 3.0301libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:05 - loss: 5.9786 - yolo_layer_1_loss: 0.8858 - yolo_layer_2_loss: 2.1540 - yolo_layer_3_loss: 2.9389libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:59 - loss: 6.0870 - yolo_layer_1_loss: 0.9306 - yolo_layer_2_loss: 2.2468 - yolo_layer_3_loss: 2.9095libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 3:47 - loss: 6.0463 - yolo_layer_1_loss: 0.8760 - yolo_layer_2_loss: 2.2664 - yolo_layer_3_loss: 2.9039libpng warning: sBIT: invalid
+104/104 [==============================] - 2024s 19s/step - loss: 6.0403 - yolo_layer_1_loss: 0.8744 - yolo_layer_2_loss: 2.2245 - yolo_layer_3_loss: 2.9414 - val_loss: 5.5543 - val_yolo_layer_1_loss: 0.9352 - val_yolo_layer_2_loss: 2.8191 - val_yolo_layer_3_loss: 3.4659
+Epoch 17/50
+libpng warning: sBIT: invalid
+ 12/104 [==>...........................] - ETA: 25:09 - loss: 6.1609 - yolo_layer_1_loss: 0.6499 - yolo_layer_2_loss: 2.4129 - yolo_layer_3_loss: 3.0980libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 21:39 - loss: 6.0717 - yolo_layer_1_loss: 0.8086 - yolo_layer_2_loss: 2.4320 - yolo_layer_3_loss: 2.8311libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 19:14 - loss: 6.3388 - yolo_layer_1_loss: 0.9665 - yolo_layer_2_loss: 2.3231 - yolo_layer_3_loss: 3.0492libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:55 - loss: 6.1788 - yolo_layer_1_loss: 0.9714 - yolo_layer_2_loss: 2.2254 - yolo_layer_3_loss: 2.9819libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:41 - loss: 5.9656 - yolo_layer_1_loss: 0.9193 - yolo_layer_2_loss: 2.1638 - yolo_layer_3_loss: 2.8824libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 6:56 - loss: 6.0941 - yolo_layer_1_loss: 1.0340 - yolo_layer_2_loss: 2.2645 - yolo_layer_3_loss: 2.7956libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:08 - loss: 6.0700 - yolo_layer_1_loss: 1.0020 - yolo_layer_2_loss: 2.2448 - yolo_layer_3_loss: 2.8232libpng warning: sBIT: invalid
+104/104 [==============================] - 2138s 21s/step - loss: 6.1790 - yolo_layer_1_loss: 0.9633 - yolo_layer_2_loss: 2.3430 - yolo_layer_3_loss: 2.8727 - val_loss: 8.8510 - val_yolo_layer_1_loss: 1.0970 - val_yolo_layer_2_loss: 1.9777 - val_yolo_layer_3_loss: 3.1226
+Epoch 18/50
+  2/104 [..............................] - ETA: 30:15 - loss: 5.8026 - yolo_layer_1_loss: 1.0642 - yolo_layer_2_loss: 1.9192 - yolo_layer_3_loss: 2.8192libpng warning: sBIT: 
+invalid
+ 15/104 [===>..........................] - ETA: 20:11 - loss: 5.7975 - yolo_layer_1_loss: 0.7402 - yolo_layer_2_loss: 1.7522 - yolo_layer_3_loss: 3.3051libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 17:58 - loss: 5.8625 - yolo_layer_1_loss: 0.7334 - yolo_layer_2_loss: 1.9806 - yolo_layer_3_loss: 3.1485libpng warning: sBIT: 
+invalid
+ 40/104 [==========>...................] - ETA: 15:31 - loss: 5.8219 - yolo_layer_1_loss: 0.7823 - yolo_layer_2_loss: 2.0951 - yolo_layer_3_loss: 2.9445libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 13:16 - loss: 5.8689 - yolo_layer_1_loss: 0.9727 - yolo_layer_2_loss: 2.0209 - yolo_layer_3_loss: 2.8754libpng warning: sBIT: 
+invalid
+ 68/104 [==================>...........] - ETA: 9:21 - loss: 5.8123 - yolo_layer_1_loss: 0.9643 - yolo_layer_2_loss: 2.0171 - yolo_layer_3_loss: 2.8309libpng warning: sBIT: invalid
+ 77/104 [=====================>........] - ETA: 7:24 - loss: 5.9350 - yolo_layer_1_loss: 1.0144 - yolo_layer_2_loss: 2.0733 - yolo_layer_3_loss: 2.8473libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:50 - loss: 5.8753 - yolo_layer_1_loss: 1.0121 - yolo_layer_2_loss: 2.0441 - yolo_layer_3_loss: 2.8190libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 16s - loss: 5.7302 - yolo_layer_1_loss: 1.0157 - yolo_layer_2_loss: 1.9650 - yolo_layer_3_loss: 2.7496libpng warning: sBIT: invalid
+104/104 [==============================] - 1952s 19s/step - loss: 5.7180 - yolo_layer_1_loss: 1.0218 - yolo_layer_2_loss: 1.9608 - yolo_layer_3_loss: 2.7354 - val_loss: 8.9581 - val_yolo_layer_1_loss: 0.6417 - val_yolo_layer_2_loss: 2.4793 - val_yolo_layer_3_loss: 2.7428
+Epoch 19/50
+ 14/104 [===>..........................] - ETA: 25:41 - loss: 6.1724 - yolo_layer_1_loss: 0.8951 - yolo_layer_2_loss: 2.4988 - yolo_layer_3_loss: 2.7786libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 23:48 - loss: 6.2998 - yolo_layer_1_loss: 1.0405 - yolo_layer_2_loss: 2.1823 - yolo_layer_3_loss: 3.0770libpng warning: sBIT: 
+invalid
+ 40/104 [==========>...................] - ETA: 20:32 - loss: 6.4857 - yolo_layer_1_loss: 1.2626 - yolo_layer_2_loss: 2.2696 - yolo_layer_3_loss: 2.9535libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:24 - loss: 6.4901 - yolo_layer_1_loss: 1.2175 - yolo_layer_2_loss: 2.3570 - yolo_layer_3_loss: 2.9157libpng warning: sBIT: 
+invalid
+ 52/104 [==============>...............] - ETA: 17:08 - loss: 6.4744 - yolo_layer_1_loss: 1.2114 - yolo_layer_2_loss: 2.3259 - yolo_layer_3_loss: 2.9372libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 13:06 - loss: 6.6044 - yolo_layer_1_loss: 1.2807 - yolo_layer_2_loss: 2.3197 - yolo_layer_3_loss: 3.0039libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:44 - loss: 6.4960 - yolo_layer_1_loss: 1.3021 - yolo_layer_2_loss: 2.2300 - yolo_layer_3_loss: 2.9639libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:38 - loss: 6.5498 - yolo_layer_1_loss: 1.3668 - yolo_layer_2_loss: 2.2271 - yolo_layer_3_loss: 2.9559libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 6.3993 - yolo_layer_1_loss: 1.3463 - yolo_layer_2_loss: 2.1428 - yolo_layer_3_loss: 2.9102libpng warning: sBIT: invalid
+104/104 [==============================] - 2286s 22s/step - loss: 6.3794 - yolo_layer_1_loss: 1.3474 - yolo_layer_2_loss: 2.1297 - yolo_layer_3_loss: 2.9023 - val_loss: 9.2676 - val_yolo_layer_1_loss: 1.0432 - val_yolo_layer_2_loss: 2.1366 - val_yolo_layer_3_loss: 2.2725
+Epoch 20/50
+ 12/104 [==>...........................] - ETA: 22:12 - loss: 5.2645 - yolo_layer_1_loss: 0.8100 - yolo_layer_2_loss: 2.1134 - yolo_layer_3_loss: 2.3411libpng warning: sBIT: 
+invalid
+ 26/104 [======>.......................] - ETA: 21:10 - loss: 5.8171 - yolo_layer_1_loss: 0.9501 - yolo_layer_2_loss: 2.1546 - yolo_layer_3_loss: 2.7124libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 20:45 - loss: 5.8758 - yolo_layer_1_loss: 0.9945 - yolo_layer_2_loss: 2.2310 - yolo_layer_3_loss: 2.6503libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:24 - loss: 5.6655 - yolo_layer_1_loss: 0.9496 - yolo_layer_2_loss: 2.1841 - yolo_layer_3_loss: 2.5317libpng warning: sBIT: 
+invalid
+ 65/104 [=================>............] - ETA: 11:23 - loss: 5.6544 - yolo_layer_1_loss: 0.9668 - yolo_layer_2_loss: 2.1211 - yolo_layer_3_loss: 2.5665libpng warning: sBIT: 
+invalid
+ 80/104 [======================>.......] - ETA: 7:04 - loss: 5.5426 - yolo_layer_1_loss: 0.9521 - yolo_layer_2_loss: 2.0659 - yolo_layer_3_loss: 2.5246libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:12 - loss: 5.6276 - yolo_layer_1_loss: 0.9627 - yolo_layer_2_loss: 2.0312 - yolo_layer_3_loss: 2.6337libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 18s - loss: 5.6441 - yolo_layer_1_loss: 1.0646 - yolo_layer_2_loss: 1.9981 - yolo_layer_3_loss: 2.5814libpng warning: sBIT: invalid
+104/104 [==============================] - 2115s 20s/step - loss: 5.6340 - yolo_layer_1_loss: 1.0638 - yolo_layer_2_loss: 1.9938 - yolo_layer_3_loss: 2.5764 - val_loss: 4.6098 - val_yolo_layer_1_loss: 0.7159 - val_yolo_layer_2_loss: 1.9723 - val_yolo_layer_3_loss: 2.6114
+Epoch 21/50
+ 13/104 [==>...........................] - ETA: 26:01 - loss: 5.1147 - yolo_layer_1_loss: 0.8045 - yolo_layer_2_loss: 1.5112 - yolo_layer_3_loss: 2.7990libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 22:51 - loss: 5.6326 - yolo_layer_1_loss: 0.7309 - yolo_layer_2_loss: 2.0531 - yolo_layer_3_loss: 2.8487libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 19:07 - loss: 5.7986 - yolo_layer_1_loss: 1.0212 - yolo_layer_2_loss: 2.0041 - yolo_layer_3_loss: 2.7733libpng warning: sBIT: 
+invalid
+libpng warning: sBIT: invalid
+ 51/104 [=============>................] - ETA: 16:21 - loss: 5.7116 - yolo_layer_1_loss: 1.0604 - yolo_layer_2_loss: 2.0046 - yolo_layer_3_loss: 2.6466libpng warning: sBIT: 
+invalid
+ 65/104 [=================>............] - ETA: 12:17 - loss: 5.7482 - yolo_layer_1_loss: 1.1019 - yolo_layer_2_loss: 2.0214 - yolo_layer_3_loss: 2.6248libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:17 - loss: 5.6688 - yolo_layer_1_loss: 1.0904 - yolo_layer_2_loss: 1.9960 - yolo_layer_3_loss: 2.5824libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:16 - loss: 5.6303 - yolo_layer_1_loss: 1.0560 - yolo_layer_2_loss: 2.0896 - yolo_layer_3_loss: 2.4847libpng warning: sBIT: invalid
+104/104 [==============================] - 2057s 20s/step - loss: 5.5048 - yolo_layer_1_loss: 0.9749 - yolo_layer_2_loss: 2.0330 - yolo_layer_3_loss: 2.4969 - val_loss: 5.5492 - val_yolo_layer_1_loss: 0.7815 - val_yolo_layer_2_loss: 2.2279 - val_yolo_layer_3_loss: 2.7835
+Epoch 22/50
+  1/104 [..............................] - ETA: 19:24 - loss: 5.6286 - yolo_layer_1_loss: 2.7174 - yolo_layer_2_loss: 1.6027 - yolo_layer_3_loss: 1.3085libpng warning: sBIT: 
+invalid
+ 16/104 [===>..........................] - ETA: 20:21 - loss: 4.9613 - yolo_layer_1_loss: 0.8552 - yolo_layer_2_loss: 1.5257 - yolo_layer_3_loss: 2.5804libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 21:04 - loss: 4.9229 - yolo_layer_1_loss: 0.7338 - yolo_layer_2_loss: 1.7583 - yolo_layer_3_loss: 2.4308libpng warning: sBIT: 
+invalid
+ 39/104 [==========>...................] - ETA: 19:59 - loss: 5.1244 - yolo_layer_1_loss: 0.8558 - yolo_layer_2_loss: 1.7838 - yolo_layer_3_loss: 2.4848libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:57 - loss: 5.2291 - yolo_layer_1_loss: 0.8644 - yolo_layer_2_loss: 1.8291 - yolo_layer_3_loss: 2.5356libpng warning: sBIT: 
+invalid
+ 65/104 [=================>............] - ETA: 11:32 - loss: 5.3420 - yolo_layer_1_loss: 0.7809 - yolo_layer_2_loss: 1.8592 - yolo_layer_3_loss: 2.7018libpng warning: sBIT: 
+invalid
+ 78/104 [=====================>........] - ETA: 7:47 - loss: 5.5846 - yolo_layer_1_loss: 0.9167 - yolo_layer_2_loss: 2.0483 - yolo_layer_3_loss: 2.6197libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:13 - loss: 5.6756 - yolo_layer_1_loss: 0.9476 - yolo_layer_2_loss: 2.1038 - yolo_layer_3_loss: 2.6242libpng warning: sBIT: invalid
+104/104 [==============================] - 2205s 21s/step - loss: 5.5881 - yolo_layer_1_loss: 0.9856 - yolo_layer_2_loss: 2.0474 - yolo_layer_3_loss: 2.5552 - val_loss: 3.3906 - val_yolo_layer_1_loss: 0.5603 - val_yolo_layer_2_loss: 2.4842 - val_yolo_layer_3_loss: 2.2366
+Epoch 23/50
+  2/104 [..............................] - ETA: 45:19 - loss: 5.0649 - yolo_layer_1_loss: 0.9957 - yolo_layer_2_loss: 0.8471 - yolo_layer_3_loss: 3.2221libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 37:44 - loss: 5.2320 - yolo_layer_1_loss: 1.3309 - yolo_layer_2_loss: 1.7575 - yolo_layer_3_loss: 2.1436libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 29:29 - loss: 5.5771 - yolo_layer_1_loss: 1.3735 - yolo_layer_2_loss: 1.8569 - yolo_layer_3_loss: 2.3468libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 24:38 - loss: 5.2688 - yolo_layer_1_loss: 1.2378 - yolo_layer_2_loss: 1.7535 - yolo_layer_3_loss: 2.2775libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 19:30 - loss: 5.1538 - yolo_layer_1_loss: 1.2522 - yolo_layer_2_loss: 1.7585 - yolo_layer_3_loss: 2.1432libpng warning: sBIT: 
+invalid
+ 52/104 [==============>...............] - ETA: 19:12 - loss: 5.1970 - yolo_layer_1_loss: 1.2598 - yolo_layer_2_loss: 1.8222 - yolo_layer_3_loss: 2.1151libpng warning: sBIT: 
+invalid
+ 66/104 [==================>...........] - ETA: 14:07 - loss: 5.1645 - yolo_layer_1_loss: 1.2347 - yolo_layer_2_loss: 1.8984 - yolo_layer_3_loss: 2.0313libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 9:39 - loss: 5.1077 - yolo_layer_1_loss: 1.1873 - yolo_layer_2_loss: 1.8644 - yolo_layer_3_loss: 2.0561 libpng warning: sBIT: 
+invalid
+ 90/104 [========================>.....] - ETA: 4:48 - loss: 4.9359 - yolo_layer_1_loss: 1.1298 - yolo_layer_2_loss: 1.7808 - yolo_layer_3_loss: 2.0254libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 21s - loss: 4.9967 - yolo_layer_1_loss: 1.1749 - yolo_layer_2_loss: 1.7432 - yolo_layer_3_loss: 2.0786libpng warning: sBIT: invalid
+104/104 [==============================] - 2422s 23s/step - loss: 4.9958 - yolo_layer_1_loss: 1.1668 - yolo_layer_2_loss: 1.7427 - yolo_layer_3_loss: 2.0863 - val_loss: 10.9966 - val_yolo_layer_1_loss: 0.7261 - val_yolo_layer_2_loss: 1.9567 - val_yolo_layer_3_loss: 2.7805
+Epoch 24/50
+ 12/104 [==>...........................] - ETA: 32:32 - loss: 5.2515 - yolo_layer_1_loss: 0.8443 - yolo_layer_2_loss: 2.7210 - yolo_layer_3_loss: 1.6861libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 25:38 - loss: 5.6102 - yolo_layer_1_loss: 0.7765 - yolo_layer_2_loss: 2.3581 - yolo_layer_3_loss: 2.4756libpng warning: sBIT: 
+invalid
+ 41/104 [==========>...................] - ETA: 21:35 - loss: 5.8277 - yolo_layer_1_loss: 0.8939 - yolo_layer_2_loss: 2.3496 - yolo_layer_3_loss: 2.5842libpng warning: sBIT: 
+invalid
+ 53/104 [==============>...............] - ETA: 17:19 - loss: 5.8196 - yolo_layer_1_loss: 0.9910 - yolo_layer_2_loss: 2.2647 - yolo_layer_3_loss: 2.5639libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 12:45 - loss: 5.6165 - yolo_layer_1_loss: 0.8362 - yolo_layer_2_loss: 2.2075 - yolo_layer_3_loss: 2.5728libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:49 - loss: 5.6083 - yolo_layer_1_loss: 0.8691 - yolo_layer_2_loss: 2.1661 - yolo_layer_3_loss: 2.5731libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:26 - loss: 5.4398 - yolo_layer_1_loss: 0.8524 - yolo_layer_2_loss: 2.0798 - yolo_layer_3_loss: 2.5077libpng warning: sBIT: invalid
+libpng warning: sBIT: invalid
+104/104 [==============================] - 2216s 21s/step - loss: 5.4411 - yolo_layer_1_loss: 0.8455 - yolo_layer_2_loss: 2.0469 - yolo_layer_3_loss: 2.5487 - val_loss: 10.5576 - val_yolo_layer_1_loss: 1.1993 - val_yolo_layer_2_loss: 2.2143 - val_yolo_layer_3_loss: 2.4993
+Epoch 25/50
+  3/104 [..............................] - ETA: 23:42 - loss: 4.9237 - yolo_layer_1_loss: 0.8024 - yolo_layer_2_loss: 1.3367 - yolo_layer_3_loss: 2.7847libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 23:54 - loss: 4.7884 - yolo_layer_1_loss: 0.5814 - yolo_layer_2_loss: 1.7876 - yolo_layer_3_loss: 2.4193libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 20:13 - loss: 4.6878 - yolo_layer_1_loss: 0.5684 - yolo_layer_2_loss: 1.8586 - yolo_layer_3_loss: 2.2607libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 19:43 - loss: 4.7261 - yolo_layer_1_loss: 0.6481 - yolo_layer_2_loss: 1.8380 - yolo_layer_3_loss: 2.2400libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 14:44 - loss: 4.5362 - yolo_layer_1_loss: 0.5772 - yolo_layer_2_loss: 1.7363 - yolo_layer_3_loss: 2.2227libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:19 - loss: 4.6747 - yolo_layer_1_loss: 0.6278 - yolo_layer_2_loss: 1.8263 - yolo_layer_3_loss: 2.2206libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:27 - loss: 4.7730 - yolo_layer_1_loss: 0.6304 - yolo_layer_2_loss: 1.8770 - yolo_layer_3_loss: 2.2657libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:47 - loss: 4.7651 - yolo_layer_1_loss: 0.6428 - yolo_layer_2_loss: 1.8737 - yolo_layer_3_loss: 2.2486libpng warning: sBIT: invalid
+104/104 [==============================] - 2094s 20s/step - loss: 4.9027 - yolo_layer_1_loss: 0.6930 - yolo_layer_2_loss: 1.9247 - yolo_layer_3_loss: 2.2850 - val_loss: 4.9673 - val_yolo_layer_1_loss: 0.6164 - val_yolo_layer_2_loss: 2.1416 - val_yolo_layer_3_loss: 2.1272
+Epoch 26/50
+libpng warning: sBIT: invalid
+ 12/104 [==>...........................] - ETA: 40:50 - loss: 5.9053 - yolo_layer_1_loss: 1.3987 - yolo_layer_2_loss: 1.8170 - yolo_layer_3_loss: 2.6896libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 27:43 - loss: 5.0547 - yolo_layer_1_loss: 0.8104 - yolo_layer_2_loss: 1.8203 - yolo_layer_3_loss: 2.4240libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 20:10 - loss: 4.7435 - yolo_layer_1_loss: 0.6348 - yolo_layer_2_loss: 1.8139 - yolo_layer_3_loss: 2.2948libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:07 - loss: 4.4783 - yolo_layer_1_loss: 0.6521 - yolo_layer_2_loss: 1.6630 - yolo_layer_3_loss: 2.1632libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:35 - loss: 4.3489 - yolo_layer_1_loss: 0.6226 - yolo_layer_2_loss: 1.6359 - yolo_layer_3_loss: 2.0904libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:55 - loss: 4.5228 - yolo_layer_1_loss: 0.7655 - yolo_layer_2_loss: 1.6470 - yolo_layer_3_loss: 2.1103libpng warning: sBIT: invalid
+ 92/104 [=========================>....] - ETA: 3:41 - loss: 4.5486 - yolo_layer_1_loss: 0.8211 - yolo_layer_2_loss: 1.6783 - yolo_layer_3_loss: 2.0491libpng warning: sBIT: invalid
+104/104 [==============================] - 2176s 21s/step - loss: 4.5751 - yolo_layer_1_loss: 0.8063 - yolo_layer_2_loss: 1.7448 - yolo_layer_3_loss: 2.0239 - val_loss: 8.1801 - val_yolo_layer_1_loss: 0.7813 - val_yolo_layer_2_loss: 2.7141 - val_yolo_layer_3_loss: 2.1479
+Epoch 27/50
+  1/104 [..............................] - ETA: 39:02 - loss: 9.1446 - yolo_layer_1_loss: 4.8264 - yolo_layer_2_loss: 2.1908 - yolo_layer_3_loss: 2.1274libpng warning: sBIT: 
+invalid
+ 15/104 [===>..........................] - ETA: 36:50 - loss: 5.7662 - yolo_layer_1_loss: 1.4615 - yolo_layer_2_loss: 2.2276 - yolo_layer_3_loss: 2.0771libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 30:33 - loss: 5.4574 - yolo_layer_1_loss: 1.1827 - yolo_layer_2_loss: 2.2340 - yolo_layer_3_loss: 2.0406libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 23:05 - loss: 5.1277 - yolo_layer_1_loss: 0.9633 - yolo_layer_2_loss: 2.0894 - yolo_layer_3_loss: 2.0749libpng warning: sBIT: 
+invalid
+ 52/104 [==============>...............] - ETA: 17:28 - loss: 4.9686 - yolo_layer_1_loss: 0.8882 - yolo_layer_2_loss: 1.9395 - yolo_layer_3_loss: 2.1410libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 13:25 - loss: 4.8371 - yolo_layer_1_loss: 0.8890 - yolo_layer_2_loss: 1.8309 - yolo_layer_3_loss: 2.1172libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:41 - loss: 4.8716 - yolo_layer_1_loss: 0.8770 - yolo_layer_2_loss: 1.8220 - yolo_layer_3_loss: 2.1725libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:20 - loss: 4.8004 - yolo_layer_1_loss: 0.8081 - yolo_layer_2_loss: 1.7903 - yolo_layer_3_loss: 2.2021libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 4.8042 - yolo_layer_1_loss: 0.8334 - yolo_layer_2_loss: 1.7824 - yolo_layer_3_loss: 2.1885libpng warning: sBIT: invalid
+104/104 [==============================] - 2297s 22s/step - loss: 4.7927 - yolo_layer_1_loss: 0.8367 - yolo_layer_2_loss: 1.7761 - yolo_layer_3_loss: 2.1799 - val_loss: 9.5244 - val_yolo_layer_1_loss: 1.1111 - val_yolo_layer_2_loss: 2.9463 - val_yolo_layer_3_loss: 2.4125
+Epoch 28/50
+ 12/104 [==>...........................] - ETA: 39:37 - loss: 5.6752 - yolo_layer_1_loss: 1.2902 - yolo_layer_2_loss: 2.4204 - yolo_layer_3_loss: 1.9645libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 34:06 - loss: 5.5928 - yolo_layer_1_loss: 1.4621 - yolo_layer_2_loss: 2.1992 - yolo_layer_3_loss: 1.9315libpng warning: sBIT: 
+invalid
+ 41/104 [==========>...................] - ETA: 26:18 - loss: 5.2310 - yolo_layer_1_loss: 1.2693 - yolo_layer_2_loss: 1.9517 - yolo_layer_3_loss: 2.0099libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 21:39 - loss: 5.5806 - yolo_layer_1_loss: 1.3436 - yolo_layer_2_loss: 2.0809 - yolo_layer_3_loss: 2.1560libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 15:55 - loss: 5.4454 - yolo_layer_1_loss: 1.3392 - yolo_layer_2_loss: 1.9895 - yolo_layer_3_loss: 2.1168libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 10:46 - loss: 5.1928 - yolo_layer_1_loss: 1.3009 - yolo_layer_2_loss: 1.9148 - yolo_layer_3_loss: 1.9770libpng warning: sBIT: 
+invalid
+ 94/104 [==========================>...] - ETA: 3:57 - loss: 5.2412 - yolo_layer_1_loss: 1.2668 - yolo_layer_2_loss: 1.8936 - yolo_layer_3_loss: 2.0808libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 23s - loss: 5.1935 - yolo_layer_1_loss: 1.2165 - yolo_layer_2_loss: 1.9079 - yolo_layer_3_loss: 2.0691libpng warning: sBIT: invalid
+104/104 [==============================] - 2642s 25s/step - loss: 5.1821 - yolo_layer_1_loss: 1.2170 - yolo_layer_2_loss: 1.9027 - yolo_layer_3_loss: 2.0624 - val_loss: 5.6627 - val_yolo_layer_1_loss: 0.5705 - val_yolo_layer_2_loss: 2.1036 - val_yolo_layer_3_loss: 2.5897
+Epoch 29/50
+ 12/104 [==>...........................] - ETA: 26:29 - loss: 4.6337 - yolo_layer_1_loss: 1.0118 - yolo_layer_2_loss: 1.8067 - yolo_layer_3_loss: 1.8152libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 25:16 - loss: 4.4317 - yolo_layer_1_loss: 0.8474 - yolo_layer_2_loss: 1.5229 - yolo_layer_3_loss: 2.0614libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 21:01 - loss: 4.3227 - yolo_layer_1_loss: 0.6834 - yolo_layer_2_loss: 1.5335 - yolo_layer_3_loss: 2.1059libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:50 - loss: 4.1575 - yolo_layer_1_loss: 0.5497 - yolo_layer_2_loss: 1.4406 - yolo_layer_3_loss: 2.1673libpng warning: sBIT: 
+invalid
+ 66/104 [==================>...........] - ETA: 10:51 - loss: 4.1433 - yolo_layer_1_loss: 0.5872 - yolo_layer_2_loss: 1.4666 - yolo_layer_3_loss: 2.0895libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:18 - loss: 4.1481 - yolo_layer_1_loss: 0.6318 - yolo_layer_2_loss: 1.4870 - yolo_layer_3_loss: 2.0293libpng warning: sBIT: invalid
+ 93/104 [=========================>....] - ETA: 3:28 - loss: 4.2214 - yolo_layer_1_loss: 0.7149 - yolo_layer_2_loss: 1.5295 - yolo_layer_3_loss: 1.9771libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 4.1686 - yolo_layer_1_loss: 0.7135 - yolo_layer_2_loss: 1.5124 - yolo_layer_3_loss: 1.9426libpng warning: sBIT: invalid
+104/104 [==============================] - 2244s 22s/step - loss: 4.1553 - yolo_layer_1_loss: 0.7068 - yolo_layer_2_loss: 1.5099 - yolo_layer_3_loss: 1.9385 - val_loss: 2.2351 - val_yolo_layer_1_loss: 0.3533 - val_yolo_layer_2_loss: 1.7305 - val_yolo_layer_3_loss: 2.1489
+Epoch 30/50
+ 12/104 [==>...........................] - ETA: 35:15 - loss: 3.6022 - yolo_layer_1_loss: 0.5652 - yolo_layer_2_loss: 1.0177 - yolo_layer_3_loss: 2.0192libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 25:55 - loss: 4.1784 - yolo_layer_1_loss: 0.4408 - yolo_layer_2_loss: 1.4584 - yolo_layer_3_loss: 2.2793libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 22:25 - loss: 3.7259 - yolo_layer_1_loss: 0.5848 - yolo_layer_2_loss: 1.2912 - yolo_layer_3_loss: 1.8500libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 16:59 - loss: 3.8049 - yolo_layer_1_loss: 0.5343 - yolo_layer_2_loss: 1.3067 - yolo_layer_3_loss: 1.9640libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 12:10 - loss: 3.7206 - yolo_layer_1_loss: 0.5157 - yolo_layer_2_loss: 1.2865 - yolo_layer_3_loss: 1.9184libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 6:56 - loss: 3.6472 - yolo_layer_1_loss: 0.4913 - yolo_layer_2_loss: 1.2413 - yolo_layer_3_loss: 1.9146libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 3:54 - loss: 3.5898 - yolo_layer_1_loss: 0.4924 - yolo_layer_2_loss: 1.2067 - yolo_layer_3_loss: 1.8907libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 17s - loss: 3.4936 - yolo_layer_1_loss: 0.4799 - yolo_layer_2_loss: 1.1677 - yolo_layer_3_loss: 1.8460libpng warning: sBIT: invalid
+104/104 [==============================] - 2131s 20s/step - loss: 3.4963 - yolo_layer_1_loss: 0.4856 - yolo_layer_2_loss: 1.1783 - yolo_layer_3_loss: 1.8324 - val_loss: 6.4052 - val_yolo_layer_1_loss: 0.3981 - val_yolo_layer_2_loss: 1.7172 - val_yolo_layer_3_loss: 1.8927
+Epoch 31/50
+ 14/104 [===>..........................] - ETA: 30:31 - loss: 3.1371 - yolo_layer_1_loss: 0.8437 - yolo_layer_2_loss: 1.0310 - yolo_layer_3_loss: 1.2624libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 26:02 - loss: 3.0781 - yolo_layer_1_loss: 0.5885 - yolo_layer_2_loss: 1.1667 - yolo_layer_3_loss: 1.3229libpng warning: sBIT: 
+invalid
+ 40/104 [==========>...................] - ETA: 22:53 - loss: 3.2174 - yolo_layer_1_loss: 0.6761 - yolo_layer_2_loss: 1.1389 - yolo_layer_3_loss: 1.4025libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 19:56 - loss: 3.4377 - yolo_layer_1_loss: 0.6347 - yolo_layer_2_loss: 1.1872 - yolo_layer_3_loss: 1.6158libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 14:45 - loss: 3.5770 - yolo_layer_1_loss: 0.5943 - yolo_layer_2_loss: 1.2275 - yolo_layer_3_loss: 1.7553libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 8:21 - loss: 3.6285 - yolo_layer_1_loss: 0.6344 - yolo_layer_2_loss: 1.2906 - yolo_layer_3_loss: 1.7035libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:53 - loss: 3.4846 - yolo_layer_1_loss: 0.5789 - yolo_layer_2_loss: 1.2449 - yolo_layer_3_loss: 1.6608libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 20s - loss: 3.4276 - yolo_layer_1_loss: 0.6019 - yolo_layer_2_loss: 1.2147 - yolo_layer_3_loss: 1.6110libpng warning: sBIT: invalid
+104/104 [==============================] - 2446s 24s/step - loss: 3.4140 - yolo_layer_1_loss: 0.5989 - yolo_layer_2_loss: 1.2111 - yolo_layer_3_loss: 1.6040 - val_loss: 2.4011 - val_yolo_layer_1_loss: 0.5212 - val_yolo_layer_2_loss: 2.1930 - val_yolo_layer_3_loss: 1.8908
+Epoch 31/50
+ 14/104 [===>..........................] - ETA: 30:31 - loss: 3.1371 - yolo_layer_1_loss: 0.8437 - yolo_layer_2_loss: 1.0310 - yolo_layer_3_loss: 1.2624libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 26:02 - loss: 3.0781 - yolo_layer_1_loss: 0.5885 - yolo_layer_2_loss: 1.1667 - yolo_layer_3_loss: 1.3229libpng warning: sBIT: 
+invalid
+ 40/104 [==========>...................] - ETA: 22:53 - loss: 3.2174 - yolo_layer_1_loss: 0.6761 - yolo_layer_2_loss: 1.1389 - yolo_layer_3_loss: 1.4025libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 19:56 - loss: 3.4377 - yolo_layer_1_loss: 0.6347 - yolo_layer_2_loss: 1.1872 - yolo_layer_3_loss: 1.6158libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 14:45 - loss: 3.5770 - yolo_layer_1_loss: 0.5943 - yolo_layer_2_loss: 1.2275 - yolo_layer_3_loss: 1.7553libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 8:21 - loss: 3.6285 - yolo_layer_1_loss: 0.6344 - yolo_layer_2_loss: 1.2906 - yolo_layer_3_loss: 1.7035libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:53 - loss: 3.4846 - yolo_layer_1_loss: 0.5789 - yolo_layer_2_loss: 1.2449 - yolo_layer_3_loss: 1.6608libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 20s - loss: 3.4276 - yolo_layer_1_loss: 0.6019 - yolo_layer_2_loss: 1.2147 - yolo_layer_3_loss: 1.6110libpng warning: sBIT: invalid
+104/104 [==============================] - 2446s 24s/step - loss: 3.4140 - yolo_layer_1_loss: 0.5989 - yolo_layer_2_loss: 1.2111 - yolo_layer_3_loss: 1.6040 - val_loss: 2.4011 - val_yolo_layer_1_loss: 0.5212 - val_yolo_layer_2_loss: 2.1930 - val_yolo_layer_3_loss: 1.8908
+Epoch 32/50
+ 12/104 [==>...........................] - ETA: 37:51 - loss: 4.0677 - yolo_layer_1_loss: 0.7024 - yolo_layer_2_loss: 1.6550 - yolo_layer_3_loss: 1.7103libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 27:22 - loss: 3.3382 - yolo_layer_1_loss: 0.5291 - yolo_layer_2_loss: 1.4065 - yolo_layer_3_loss: 1.4026libpng warning: sBIT: 
+invalid
+ 42/104 [===========>..................] - ETA: 19:01 - loss: 3.6419 - yolo_layer_1_loss: 0.5361 - yolo_layer_2_loss: 1.3571 - yolo_layer_3_loss: 1.7487libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:56 - loss: 3.4323 - yolo_layer_1_loss: 0.4902 - yolo_layer_2_loss: 1.2733 - yolo_layer_3_loss: 1.6688libpng warning: sBIT: 
+invalid
+ 67/104 [==================>...........] - ETA: 11:14 - loss: 3.2155 - yolo_layer_1_loss: 0.4151 - yolo_layer_2_loss: 1.2788 - yolo_layer_3_loss: 1.5217libpng warning: sBIT: 
+invalid
+ 79/104 [=====================>........] - ETA: 7:32 - loss: 3.2311 - yolo_layer_1_loss: 0.4124 - yolo_layer_2_loss: 1.2495 - yolo_layer_3_loss: 1.5692libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:14 - loss: 3.2425 - yolo_layer_1_loss: 0.4287 - yolo_layer_2_loss: 1.2212 - yolo_layer_3_loss: 1.5926libpng warning: sBIT: invalid
+104/104 [==============================] - 2236s 22s/step - loss: 3.2769 - yolo_layer_1_loss: 0.4639 - yolo_layer_2_loss: 1.2350 - yolo_layer_3_loss: 1.5780 - val_loss: 2.2636 - val_yolo_layer_1_loss: 0.3888 - val_yolo_layer_2_loss: 1.6830 - val_yolo_layer_3_loss: 1.8045
+Epoch 33/50
+  2/104 [..............................] - ETA: 52:17 - loss: 3.0171 - yolo_layer_1_loss: 0.4479 - yolo_layer_2_loss: 1.5984 - yolo_layer_3_loss: 0.9708libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 42:38 - loss: 4.0342 - yolo_layer_1_loss: 0.5244 - yolo_layer_2_loss: 1.5002 - yolo_layer_3_loss: 2.0096libpng warning: sBIT: 
+invalid
+ 27/104 [======>.......................] - ETA: 31:11 - loss: 3.4417 - yolo_layer_1_loss: 0.4162 - yolo_layer_2_loss: 1.2943 - yolo_layer_3_loss: 1.7312libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 27:18 - loss: 3.2952 - yolo_layer_1_loss: 0.4965 - yolo_layer_2_loss: 1.2726 - yolo_layer_3_loss: 1.5261libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 22:34 - loss: 3.3238 - yolo_layer_1_loss: 0.4933 - yolo_layer_2_loss: 1.3598 - yolo_layer_3_loss: 1.4707libpng warning: sBIT: 
+invalid
+ 66/104 [==================>...........] - ETA: 15:49 - loss: 3.3913 - yolo_layer_1_loss: 0.4893 - yolo_layer_2_loss: 1.3658 - yolo_layer_3_loss: 1.5362libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 11:02 - loss: 3.2939 - yolo_layer_1_loss: 0.4776 - yolo_layer_2_loss: 1.3235 - yolo_layer_3_loss: 1.4928libpng warning: sBIT: 
+invalid
+ 92/104 [=========================>....] - ETA: 4:56 - loss: 3.3130 - yolo_layer_1_loss: 0.4910 - yolo_layer_2_loss: 1.3125 - yolo_layer_3_loss: 1.5096libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 24s - loss: 3.3353 - yolo_layer_1_loss: 0.5055 - yolo_layer_2_loss: 1.2911 - yolo_layer_3_loss: 1.5386libpng warning: sBIT: invalid
+104/104 [==============================] - 2849s 27s/step - loss: 3.3156 - yolo_layer_1_loss: 0.5008 - yolo_layer_2_loss: 1.2821 - yolo_layer_3_loss: 1.5326 - val_loss: 6.1549 - val_yolo_layer_1_loss: 0.4449 - val_yolo_layer_2_loss: 1.3553 - val_yolo_layer_3_loss: 1.9014
+Epoch 34/50
+  3/104 [..............................] - ETA: 52:46 - loss: 4.5315 - yolo_layer_1_loss: 0.5425 - yolo_layer_2_loss: 1.4570 - yolo_layer_3_loss: 2.5320libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 41:56 - loss: 3.3846 - yolo_layer_1_loss: 0.5325 - yolo_layer_2_loss: 1.3465 - yolo_layer_3_loss: 1.5056libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 32:35 - loss: 3.1906 - yolo_layer_1_loss: 0.5670 - yolo_layer_2_loss: 1.2495 - yolo_layer_3_loss: 1.3741libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 24:31 - loss: 3.2231 - yolo_layer_1_loss: 0.5782 - yolo_layer_2_loss: 1.2772 - yolo_layer_3_loss: 1.3677libpng warning: sBIT: 
+invalid
+ 53/104 [==============>...............] - ETA: 17:53 - loss: 3.1290 - yolo_layer_1_loss: 0.5239 - yolo_layer_2_loss: 1.2445 - yolo_layer_3_loss: 1.3606libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 13:27 - loss: 3.2434 - yolo_layer_1_loss: 0.6079 - yolo_layer_2_loss: 1.2360 - yolo_layer_3_loss: 1.3995libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 9:12 - loss: 3.1434 - yolo_layer_1_loss: 0.5617 - yolo_layer_2_loss: 1.2065 - yolo_layer_3_loss: 1.3752libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:45 - loss: 3.1513 - yolo_layer_1_loss: 0.5480 - yolo_layer_2_loss: 1.1778 - yolo_layer_3_loss: 1.4255libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 21s - loss: 3.2517 - yolo_layer_1_loss: 0.5647 - yolo_layer_2_loss: 1.1947 - yolo_layer_3_loss: 1.4922libpng warning: sBIT: invalid
+104/104 [==============================] - 2500s 24s/step - loss: 3.2340 - yolo_layer_1_loss: 0.5595 - yolo_layer_2_loss: 1.1862 - yolo_layer_3_loss: 1.4882 - val_loss: 3.4524 - val_yolo_layer_1_loss: 0.2464 - val_yolo_layer_2_loss: 1.6107 - val_yolo_layer_3_loss: 2.2955
+Epoch 35/50
+ 12/104 [==>...........................] - ETA: 37:13 - loss: 3.2192 - yolo_layer_1_loss: 0.3012 - yolo_layer_2_loss: 0.8047 - yolo_layer_3_loss: 2.1132libpng warning: sBIT: 
+invalid
+ 27/104 [======>.......................] - ETA: 31:35 - loss: 3.6808 - yolo_layer_1_loss: 0.3817 - yolo_layer_2_loss: 1.2065 - yolo_layer_3_loss: 2.0925libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 25:31 - loss: 3.5522 - yolo_layer_1_loss: 0.4192 - yolo_layer_2_loss: 1.2974 - yolo_layer_3_loss: 1.8356libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 21:30 - loss: 3.4438 - yolo_layer_1_loss: 0.5304 - yolo_layer_2_loss: 1.2509 - yolo_layer_3_loss: 1.6625libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 14:54 - loss: 3.3755 - yolo_layer_1_loss: 0.4624 - yolo_layer_2_loss: 1.2289 - yolo_layer_3_loss: 1.6842libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 8:30 - loss: 3.3300 - yolo_layer_1_loss: 0.5075 - yolo_layer_2_loss: 1.2668 - yolo_layer_3_loss: 1.5557libpng warning: sBIT: invalid
+ 93/104 [=========================>....] - ETA: 4:01 - loss: 3.2259 - yolo_layer_1_loss: 0.4868 - yolo_layer_2_loss: 1.2150 - yolo_layer_3_loss: 1.5240libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 21s - loss: 3.2763 - yolo_layer_1_loss: 0.4802 - yolo_layer_2_loss: 1.2526 - yolo_layer_3_loss: 1.5435libpng warning: sBIT: invalid
+104/104 [==============================] - 2571s 25s/step - loss: 3.2674 - yolo_layer_1_loss: 0.4757 - yolo_layer_2_loss: 1.2508 - yolo_layer_3_loss: 1.5409 - val_loss: 6.8460 - val_yolo_layer_1_loss: 0.3764 - val_yolo_layer_2_loss: 1.8971 - val_yolo_layer_3_loss: 1.9738
+Epoch 36/50
+ 13/104 [==>...........................] - ETA: 33:13 - loss: 3.0523 - yolo_layer_1_loss: 0.3462 - yolo_layer_2_loss: 0.9890 - yolo_layer_3_loss: 1.7171libpng warning: sBIT: 
+invalid
+ 29/104 [=======>......................] - ETA: 25:49 - loss: 3.1832 - yolo_layer_1_loss: 0.3906 - yolo_layer_2_loss: 0.9795 - yolo_layer_3_loss: 1.8130libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 22:07 - loss: 3.1193 - yolo_layer_1_loss: 0.3856 - yolo_layer_2_loss: 1.0500 - yolo_layer_3_loss: 1.6838libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:08 - loss: 3.2918 - yolo_layer_1_loss: 0.3995 - yolo_layer_2_loss: 1.2496 - yolo_layer_3_loss: 1.6427libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 13:22 - loss: 3.3574 - yolo_layer_1_loss: 0.5041 - yolo_layer_2_loss: 1.2189 - yolo_layer_3_loss: 1.6344libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:23 - loss: 3.2516 - yolo_layer_1_loss: 0.4441 - yolo_layer_2_loss: 1.1426 - yolo_layer_3_loss: 1.6649libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 3:56 - loss: 3.2367 - yolo_layer_1_loss: 0.4219 - yolo_layer_2_loss: 1.1289 - yolo_layer_3_loss: 1.6859libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 18s - loss: 3.1366 - yolo_layer_1_loss: 0.4090 - yolo_layer_2_loss: 1.0870 - yolo_layer_3_loss: 1.6406libpng warning: sBIT: invalid
+104/104 [==============================] - 2122s 20s/step - loss: 3.1769 - yolo_layer_1_loss: 0.4066 - yolo_layer_2_loss: 1.1243 - yolo_layer_3_loss: 1.6460 - val_loss: 1.8088 - val_yolo_layer_1_loss: 0.3827 - val_yolo_layer_2_loss: 1.3978 - val_yolo_layer_3_loss: 1.9081
+Epoch 37/50
+ 12/104 [==>...........................] - ETA: 26:38 - loss: 2.7078 - yolo_layer_1_loss: 0.3579 - yolo_layer_2_loss: 1.1646 - yolo_layer_3_loss: 1.1854libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 21:53 - loss: 2.5893 - yolo_layer_1_loss: 0.2570 - yolo_layer_2_loss: 1.0264 - yolo_layer_3_loss: 1.3060libpng warning: sBIT: 
+invalid
+ 39/104 [==========>...................] - ETA: 16:39 - loss: 2.3181 - yolo_layer_1_loss: 0.2008 - yolo_layer_2_loss: 0.8871 - yolo_layer_3_loss: 1.2302libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 14:55 - loss: 2.5859 - yolo_layer_1_loss: 0.2890 - yolo_layer_2_loss: 0.9687 - yolo_layer_3_loss: 1.3282libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:30 - loss: 2.5256 - yolo_layer_1_loss: 0.3434 - yolo_layer_2_loss: 0.9636 - yolo_layer_3_loss: 1.2186libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 6:50 - loss: 2.6867 - yolo_layer_1_loss: 0.4246 - yolo_layer_2_loss: 0.9843 - yolo_layer_3_loss: 1.2778libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:03 - loss: 2.6835 - yolo_layer_1_loss: 0.4003 - yolo_layer_2_loss: 1.0264 - yolo_layer_3_loss: 1.2568libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 17s - loss: 2.8041 - yolo_layer_1_loss: 0.3712 - yolo_layer_2_loss: 1.0497 - yolo_layer_3_loss: 1.3832libpng warning: sBIT: invalid
+104/104 [==============================] - 2010s 19s/step - loss: 2.8262 - yolo_layer_1_loss: 0.3783 - yolo_layer_2_loss: 1.0630 - yolo_layer_3_loss: 1.3849 - val_loss: 3.0571 - val_yolo_layer_1_loss: 0.3519 - val_yolo_layer_2_loss: 1.6059 - val_yolo_layer_3_loss: 2.0666
+Epoch 38/50
+ 12/104 [==>...........................] - ETA: 21:02 - loss: 3.1790 - yolo_layer_1_loss: 0.7110 - yolo_layer_2_loss: 0.9938 - yolo_layer_3_loss: 1.4742libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 20:53 - loss: 3.1405 - yolo_layer_1_loss: 0.5456 - yolo_layer_2_loss: 1.2617 - yolo_layer_3_loss: 1.3332libpng warning: sBIT: 
+invalid
+ 40/104 [==========>...................] - ETA: 18:46 - loss: 2.9891 - yolo_layer_1_loss: 0.5202 - yolo_layer_2_loss: 1.1507 - yolo_layer_3_loss: 1.3182libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 16:18 - loss: 3.0142 - yolo_layer_1_loss: 0.5567 - yolo_layer_2_loss: 1.1914 - yolo_layer_3_loss: 1.2660libpng warning: sBIT: 
+invalid
+ 68/104 [==================>...........] - ETA: 11:53 - loss: 3.0140 - yolo_layer_1_loss: 0.5180 - yolo_layer_2_loss: 1.2178 - yolo_layer_3_loss: 1.2782libpng warning: sBIT: 
+invalid
+ 79/104 [=====================>........] - ETA: 8:39 - loss: 3.0635 - yolo_layer_1_loss: 0.5014 - yolo_layer_2_loss: 1.2050 - yolo_layer_3_loss: 1.3571libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:47 - loss: 3.0348 - yolo_layer_1_loss: 0.4937 - yolo_layer_2_loss: 1.1581 - yolo_layer_3_loss: 1.3829libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 2.9278 - yolo_layer_1_loss: 0.4616 - yolo_layer_2_loss: 1.0904 - yolo_layer_3_loss: 1.3758libpng warning: sBIT: invalid
+104/104 [==============================] - 2371s 23s/step - loss: 2.9127 - yolo_layer_1_loss: 0.4572 - yolo_layer_2_loss: 1.0856 - yolo_layer_3_loss: 1.3699 - val_loss: 3.2603 - val_yolo_layer_1_loss: 0.5008 - val_yolo_layer_2_loss: 1.5958 - val_yolo_layer_3_loss: 1.6074
+Epoch 39/50
+ 14/104 [===>..........................] - ETA: 25:14 - loss: 2.2403 - yolo_layer_1_loss: 0.2130 - yolo_layer_2_loss: 1.0958 - yolo_layer_3_loss: 0.9315libpng warning: sBIT: 
+invalid
+ 29/104 [=======>......................] - ETA: 22:03 - loss: 2.2358 - yolo_layer_1_loss: 0.3512 - yolo_layer_2_loss: 0.9378 - yolo_layer_3_loss: 0.9468libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 21:32 - loss: 2.3574 - yolo_layer_1_loss: 0.3679 - yolo_layer_2_loss: 0.8720 - yolo_layer_3_loss: 1.1176libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:21 - loss: 2.5528 - yolo_layer_1_loss: 0.3435 - yolo_layer_2_loss: 0.9514 - yolo_layer_3_loss: 1.2578libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 13:36 - loss: 2.5447 - yolo_layer_1_loss: 0.3571 - yolo_layer_2_loss: 0.9629 - yolo_layer_3_loss: 1.2247libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 8:04 - loss: 2.6872 - yolo_layer_1_loss: 0.4209 - yolo_layer_2_loss: 1.0586 - yolo_layer_3_loss: 1.2077libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:47 - loss: 2.7247 - yolo_layer_1_loss: 0.4086 - yolo_layer_2_loss: 1.0813 - yolo_layer_3_loss: 1.2348libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 20s - loss: 2.7241 - yolo_layer_1_loss: 0.3803 - yolo_layer_2_loss: 1.0624 - yolo_layer_3_loss: 1.2815libpng warning: sBIT: invalid
+104/104 [==============================] - 2312s 22s/step - loss: 2.7149 - yolo_layer_1_loss: 0.3767 - yolo_layer_2_loss: 1.0591 - yolo_layer_3_loss: 1.2791 - val_loss: 1.5517 - val_yolo_layer_1_loss: 0.4829 - val_yolo_layer_2_loss: 1.2541 - val_yolo_layer_3_loss: 1.3420
+Epoch 40/50
+ 12/104 [==>...........................] - ETA: 26:35 - loss: 2.6940 - yolo_layer_1_loss: 0.5446 - yolo_layer_2_loss: 1.0429 - yolo_layer_3_loss: 1.1066libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 28:43 - loss: 2.8220 - yolo_layer_1_loss: 0.5752 - yolo_layer_2_loss: 1.0088 - yolo_layer_3_loss: 1.2380libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 23:24 - loss: 2.9292 - yolo_layer_1_loss: 0.5350 - yolo_layer_2_loss: 1.0572 - yolo_layer_3_loss: 1.3371libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:42 - loss: 3.0955 - yolo_layer_1_loss: 0.5145 - yolo_layer_2_loss: 1.1747 - yolo_layer_3_loss: 1.4062libpng warning: sBIT: 
+invalid
+ 68/104 [==================>...........] - ETA: 12:12 - loss: 3.0678 - yolo_layer_1_loss: 0.4631 - yolo_layer_2_loss: 1.1916 - yolo_layer_3_loss: 1.4131libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:48 - loss: 3.0697 - yolo_layer_1_loss: 0.4699 - yolo_layer_2_loss: 1.1742 - yolo_layer_3_loss: 1.4256libpng warning: sBIT: invalid
+ 93/104 [=========================>....] - ETA: 3:25 - loss: 3.0695 - yolo_layer_1_loss: 0.4586 - yolo_layer_2_loss: 1.1151 - yolo_layer_3_loss: 1.4959libpng warning: sBIT: invalid
+104/104 [==============================] - 2227s 21s/step - loss: 3.0821 - yolo_layer_1_loss: 0.4312 - yolo_layer_2_loss: 1.0969 - yolo_layer_3_loss: 1.5540 - val_loss: 5.7061 - val_yolo_layer_1_loss: 0.3402 - val_yolo_layer_2_loss: 1.3331 - val_yolo_layer_3_loss: 1.9184
+Epoch 41/50
+  3/104 [..............................] - ETA: 22:35 - loss: 2.2378 - yolo_layer_1_loss: 0.1967 - yolo_layer_2_loss: 0.7535 - yolo_layer_3_loss: 1.2876libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 25:22 - loss: 2.6596 - yolo_layer_1_loss: 0.2925 - yolo_layer_2_loss: 1.1099 - yolo_layer_3_loss: 1.2571libpng warning: sBIT: 
+invalid
+ 27/104 [======>.......................] - ETA: 24:35 - loss: 2.3262 - yolo_layer_1_loss: 0.2542 - yolo_layer_2_loss: 0.9188 - yolo_layer_3_loss: 1.1532libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 21:39 - loss: 2.5976 - yolo_layer_1_loss: 0.4029 - yolo_layer_2_loss: 0.9900 - yolo_layer_3_loss: 1.2047libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:50 - loss: 2.5882 - yolo_layer_1_loss: 0.4539 - yolo_layer_2_loss: 0.9170 - yolo_layer_3_loss: 1.2173libpng warning: sBIT: 
+invalid
+ 65/104 [=================>............] - ETA: 12:40 - loss: 2.5679 - yolo_layer_1_loss: 0.4458 - yolo_layer_2_loss: 0.9027 - yolo_layer_3_loss: 1.2195libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:54 - loss: 2.5904 - yolo_layer_1_loss: 0.4283 - yolo_layer_2_loss: 0.9228 - yolo_layer_3_loss: 1.2392libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 4:26 - loss: 2.5910 - yolo_layer_1_loss: 0.4147 - yolo_layer_2_loss: 0.9159 - yolo_layer_3_loss: 1.2604libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 20s - loss: 2.7181 - yolo_layer_1_loss: 0.4513 - yolo_layer_2_loss: 0.9539 - yolo_layer_3_loss: 1.3129libpng warning: sBIT: invalid
+104/104 [==============================] - 2351s 23s/step - loss: 2.7071 - yolo_layer_1_loss: 0.4471 - yolo_layer_2_loss: 0.9494 - yolo_layer_3_loss: 1.3106 - val_loss: 2.3495 - val_yolo_layer_1_loss: 0.3253 - val_yolo_layer_2_loss: 1.4573 - val_yolo_layer_3_loss: 1.6814
+Epoch 42/50
+ 12/104 [==>...........................] - ETA: 24:06 - loss: 3.0120 - yolo_layer_1_loss: 0.3959 - yolo_layer_2_loss: 0.8567 - yolo_layer_3_loss: 1.7593libpng warning: sBIT: 
+invalid
+ 29/104 [=======>......................] - ETA: 21:20 - loss: 2.9302 - yolo_layer_1_loss: 0.4955 - yolo_layer_2_loss: 0.9340 - yolo_layer_3_loss: 1.5007libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 20:26 - loss: 3.0321 - yolo_layer_1_loss: 0.4884 - yolo_layer_2_loss: 0.9846 - yolo_layer_3_loss: 1.5591libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 17:48 - loss: 3.0029 - yolo_layer_1_loss: 0.5323 - yolo_layer_2_loss: 1.0538 - yolo_layer_3_loss: 1.4169libpng warning: sBIT: 
+invalid
+ 67/104 [==================>...........] - ETA: 11:54 - loss: 2.8171 - yolo_layer_1_loss: 0.4449 - yolo_layer_2_loss: 0.9698 - yolo_layer_3_loss: 1.4024libpng warning: sBIT: 
+invalid
+ 78/104 [=====================>........] - ETA: 8:11 - loss: 2.7709 - yolo_layer_1_loss: 0.4209 - yolo_layer_2_loss: 0.9610 - yolo_layer_3_loss: 1.3889libpng warning: sBIT: invalid
+ 79/104 [=====================>........] - ETA: 7:51 - loss: 2.7720 - yolo_layer_1_loss: 0.4180 - yolo_layer_2_loss: 0.9624 - yolo_layer_3_loss: 1.3916libpng warning: sBIT: invalid
+ 94/104 [==========================>...] - ETA: 3:08 - loss: 2.8223 - yolo_layer_1_loss: 0.4184 - yolo_layer_2_loss: 1.0048 - yolo_layer_3_loss: 1.3991libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 18s - loss: 2.7493 - yolo_layer_1_loss: 0.4085 - yolo_layer_2_loss: 0.9794 - yolo_layer_3_loss: 1.3614libpng warning: sBIT: invalid
+104/104 [==============================] - 2214s 21s/step - loss: 2.7756 - yolo_layer_1_loss: 0.4047 - yolo_layer_2_loss: 1.0019 - yolo_layer_3_loss: 1.3690 - val_loss: 3.2674 - val_yolo_layer_1_loss: 0.3640 - val_yolo_layer_2_loss: 1.7661 - val_yolo_layer_3_loss: 1.8853
+Epoch 43/50
+libpng warning: sBIT: invalid
+ 12/104 [==>...........................] - ETA: 32:35 - loss: 3.1266 - yolo_layer_1_loss: 0.3549 - yolo_layer_2_loss: 1.0697 - yolo_layer_3_loss: 1.7020libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 27:09 - loss: 2.6590 - yolo_layer_1_loss: 0.4257 - yolo_layer_2_loss: 0.9130 - yolo_layer_3_loss: 1.3203libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 20:03 - loss: 2.6100 - yolo_layer_1_loss: 0.3500 - yolo_layer_2_loss: 0.8622 - yolo_layer_3_loss: 1.3978libpng warning: sBIT: 
+invalid
+ 55/104 [==============>...............] - ETA: 14:29 - loss: 2.5186 - yolo_layer_1_loss: 0.3238 - yolo_layer_2_loss: 0.9022 - yolo_layer_3_loss: 1.2927libpng warning: sBIT: 
+invalid
+ 67/104 [==================>...........] - ETA: 11:03 - loss: 2.5268 - yolo_layer_1_loss: 0.3338 - yolo_layer_2_loss: 0.9224 - yolo_layer_3_loss: 1.2706libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:41 - loss: 2.4683 - yolo_layer_1_loss: 0.3541 - yolo_layer_2_loss: 0.8881 - yolo_layer_3_loss: 1.2262libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:51 - loss: 2.5264 - yolo_layer_1_loss: 0.3486 - yolo_layer_2_loss: 0.8893 - yolo_layer_3_loss: 1.2885libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 20s - loss: 2.6861 - yolo_layer_1_loss: 0.3806 - yolo_layer_2_loss: 0.9273 - yolo_layer_3_loss: 1.3782libpng warning: sBIT: invalid
+104/104 [==============================] - 2417s 23s/step - loss: 2.6718 - yolo_layer_1_loss: 0.3770 - yolo_layer_2_loss: 0.9217 - yolo_layer_3_loss: 1.3731 - val_loss: 2.0029 - val_yolo_layer_1_loss: 0.2609 - val_yolo_layer_2_loss: 1.6570 - val_yolo_layer_3_loss: 1.9507
+Epoch 44/50
+ 13/104 [==>...........................] - ETA: 31:07 - loss: 2.4803 - yolo_layer_1_loss: 0.1480 - yolo_layer_2_loss: 0.7996 - yolo_layer_3_loss: 1.5327libpng warning: sBIT: 
+invalid
+ 28/104 [=======>......................] - ETA: 21:23 - loss: 2.5114 - yolo_layer_1_loss: 0.1596 - yolo_layer_2_loss: 0.8353 - yolo_layer_3_loss: 1.5165libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 18:24 - loss: 2.7509 - yolo_layer_1_loss: 0.1872 - yolo_layer_2_loss: 0.9189 - yolo_layer_3_loss: 1.6448libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:16 - loss: 2.6061 - yolo_layer_1_loss: 0.2099 - yolo_layer_2_loss: 0.8589 - yolo_layer_3_loss: 1.5373libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:07 - loss: 2.4494 - yolo_layer_1_loss: 0.1891 - yolo_layer_2_loss: 0.8247 - yolo_layer_3_loss: 1.4357libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:24 - loss: 2.4635 - yolo_layer_1_loss: 0.1813 - yolo_layer_2_loss: 0.8067 - yolo_layer_3_loss: 1.4754libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 3:27 - loss: 2.4663 - yolo_layer_1_loss: 0.1951 - yolo_layer_2_loss: 0.7973 - yolo_layer_3_loss: 1.4739libpng warning: sBIT: invalid
+104/104 [==============================] - 1916s 18s/step - loss: 2.5687 - yolo_layer_1_loss: 0.1974 - yolo_layer_2_loss: 0.8524 - yolo_layer_3_loss: 1.5189 - val_loss: 2.2190 - val_yolo_layer_1_loss: 0.3253 - val_yolo_layer_2_loss: 1.6229 - val_yolo_layer_3_loss: 1.7686
+Epoch 45/50
+  1/104 [..............................] - ETA: 24:39 - loss: 2.3885 - yolo_layer_1_loss: 0.6441 - yolo_layer_2_loss: 0.9878 - yolo_layer_3_loss: 0.7566libpng warning: sBIT: 
+invalid
+ 14/104 [===>..........................] - ETA: 23:51 - loss: 2.7583 - yolo_layer_1_loss: 0.3515 - yolo_layer_2_loss: 0.9085 - yolo_layer_3_loss: 1.4983libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 25:43 - loss: 2.7413 - yolo_layer_1_loss: 0.3568 - yolo_layer_2_loss: 0.9564 - yolo_layer_3_loss: 1.4281libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 22:10 - loss: 2.6746 - yolo_layer_1_loss: 0.3731 - yolo_layer_2_loss: 0.9044 - yolo_layer_3_loss: 1.3971libpng warning: sBIT: 
+invalid
+ 54/104 [==============>...............] - ETA: 16:30 - loss: 2.6068 - yolo_layer_1_loss: 0.3482 - yolo_layer_2_loss: 0.8645 - yolo_layer_3_loss: 1.3941libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 13:20 - loss: 2.5840 - yolo_layer_1_loss: 0.3334 - yolo_layer_2_loss: 0.8468 - yolo_layer_3_loss: 1.4038libpng warning: sBIT: 
+invalid
+ 80/104 [======================>.......] - ETA: 7:55 - loss: 2.6824 - yolo_layer_1_loss: 0.4283 - yolo_layer_2_loss: 0.9040 - yolo_layer_3_loss: 1.3500libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 4:14 - loss: 2.7263 - yolo_layer_1_loss: 0.4205 - yolo_layer_2_loss: 0.8843 - yolo_layer_3_loss: 1.4214libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 19s - loss: 2.7814 - yolo_layer_1_loss: 0.4039 - yolo_layer_2_loss: 0.9566 - yolo_layer_3_loss: 1.4209libpng warning: sBIT: invalid
+104/104 [==============================] - 2301s 22s/step - loss: 2.7853 - yolo_layer_1_loss: 0.4081 - yolo_layer_2_loss: 0.9622 - yolo_layer_3_loss: 1.4150 - val_loss: 2.5422 - val_yolo_layer_1_loss: 0.3259 - val_yolo_layer_2_loss: 2.1568 - val_yolo_layer_3_loss: 1.7270
+Epoch 46/50
+ 12/104 [==>...........................] - ETA: 20:53 - loss: 2.7589 - yolo_layer_1_loss: 0.4212 - yolo_layer_2_loss: 0.6862 - yolo_layer_3_loss: 1.6515libpng warning: sBIT: 
+invalid
+libpng warning: sBIT: invalid
+ 25/104 [======>.......................] - ETA: 20:23 - loss: 2.6646 - yolo_layer_1_loss: 0.3211 - yolo_layer_2_loss: 0.7296 - yolo_layer_3_loss: 1.6138libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 17:51 - loss: 2.9223 - yolo_layer_1_loss: 0.3091 - yolo_layer_2_loss: 0.9012 - yolo_layer_3_loss: 1.7119libpng warning: sBIT: 
+invalid
+ 55/104 [==============>...............] - ETA: 13:33 - loss: 2.7904 - yolo_layer_1_loss: 0.3217 - yolo_layer_2_loss: 0.8735 - yolo_layer_3_loss: 1.5952libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 11:07 - loss: 2.7776 - yolo_layer_1_loss: 0.2982 - yolo_layer_2_loss: 0.9208 - yolo_layer_3_loss: 1.5586libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:30 - loss: 2.9318 - yolo_layer_1_loss: 0.3221 - yolo_layer_2_loss: 0.9886 - yolo_layer_3_loss: 1.6211libpng warning: sBIT: invalid
+ 91/104 [=========================>....] - ETA: 3:37 - loss: 3.1251 - yolo_layer_1_loss: 0.3793 - yolo_layer_2_loss: 1.0394 - yolo_layer_3_loss: 1.7064libpng warning: sBIT: invalid
+104/104 [==============================] - 1926s 19s/step - loss: 2.9738 - yolo_layer_1_loss: 0.3440 - yolo_layer_2_loss: 1.0021 - yolo_layer_3_loss: 1.6277 - val_loss: 3.7461 - val_yolo_layer_1_loss: 0.2438 - val_yolo_layer_2_loss: 1.4019 - val_yolo_layer_3_loss: 1.5941
+Epoch 47/50
+  3/104 [..............................] - ETA: 32:33 - loss: 5.5584 - yolo_layer_1_loss: 1.9079 - yolo_layer_2_loss: 2.4839 - yolo_layer_3_loss: 1.1666libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 33:51 - loss: 3.3171 - yolo_layer_1_loss: 1.1227 - yolo_layer_2_loss: 1.1812 - yolo_layer_3_loss: 1.0132libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 26:24 - loss: 3.1701 - yolo_layer_1_loss: 0.7179 - yolo_layer_2_loss: 1.1123 - yolo_layer_3_loss: 1.3399libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 21:23 - loss: 3.1008 - yolo_layer_1_loss: 0.6234 - yolo_layer_2_loss: 1.2024 - yolo_layer_3_loss: 1.2749libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 15:44 - loss: 2.9262 - yolo_layer_1_loss: 0.5893 - yolo_layer_2_loss: 1.0802 - yolo_layer_3_loss: 1.2567libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 12:06 - loss: 2.9839 - yolo_layer_1_loss: 0.6085 - yolo_layer_2_loss: 1.0152 - yolo_layer_3_loss: 1.3602libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:17 - loss: 3.0210 - yolo_layer_1_loss: 0.6351 - yolo_layer_2_loss: 1.0750 - yolo_layer_3_loss: 1.3109libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:21 - loss: 3.1176 - yolo_layer_1_loss: 0.6394 - yolo_layer_2_loss: 1.1664 - yolo_layer_3_loss: 1.3118libpng warning: sBIT: invalid
+104/104 [==============================] - 2180s 21s/step - loss: 3.0180 - yolo_layer_1_loss: 0.5942 - yolo_layer_2_loss: 1.1681 - yolo_layer_3_loss: 1.2557 - val_loss: 2.3501 - val_yolo_layer_1_loss: 0.4968 - val_yolo_layer_2_loss: 1.4909 - val_yolo_layer_3_loss: 1.6846
+Epoch 48/50
+  3/104 [..............................] - ETA: 31:43 - loss: 3.4513 - yolo_layer_1_loss: 0.2408 - yolo_layer_2_loss: 0.8993 - yolo_layer_3_loss: 2.3112libpng warning: sBIT: 
+invalid
+ 12/104 [==>...........................] - ETA: 28:33 - loss: 2.7385 - yolo_layer_1_loss: 0.5048 - yolo_layer_2_loss: 0.7820 - yolo_layer_3_loss: 1.4517libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 25:58 - loss: 3.2632 - yolo_layer_1_loss: 0.6630 - yolo_layer_2_loss: 1.0522 - yolo_layer_3_loss: 1.5481libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 21:35 - loss: 3.1480 - yolo_layer_1_loss: 0.5990 - yolo_layer_2_loss: 1.1227 - yolo_layer_3_loss: 1.4262libpng warning: sBIT: 
+invalid
+ 42/104 [===========>..................] - ETA: 19:28 - loss: 3.0503 - yolo_layer_1_loss: 0.5774 - yolo_layer_2_loss: 1.0783 - yolo_layer_3_loss: 1.3946libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 16:02 - loss: 2.9272 - yolo_layer_1_loss: 0.5364 - yolo_layer_2_loss: 1.0709 - yolo_layer_3_loss: 1.3200libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 12:42 - loss: 2.9272 - yolo_layer_1_loss: 0.5090 - yolo_layer_2_loss: 1.0861 - yolo_layer_3_loss: 1.3321libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 8:57 - loss: 3.1939 - yolo_layer_1_loss: 0.5186 - yolo_layer_2_loss: 1.2967 - yolo_layer_3_loss: 1.3786libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 4:42 - loss: 3.0105 - yolo_layer_1_loss: 0.5025 - yolo_layer_2_loss: 1.2099 - yolo_layer_3_loss: 1.2981libpng warning: sBIT: invalid
+104/104 [==============================] - 2277s 22s/step - loss: 2.8915 - yolo_layer_1_loss: 0.4870 - yolo_layer_2_loss: 1.1526 - yolo_layer_3_loss: 1.2520 - val_loss: 5.0046 - val_yolo_layer_1_loss: 0.3711 - val_yolo_layer_2_loss: 1.6199 - val_yolo_layer_3_loss: 1.9890
+Epoch 49/50
+  1/104 [..............................] - ETA: 24:18 - loss: 1.6724 - yolo_layer_1_loss: 0.2548 - yolo_layer_2_loss: 0.5503 - yolo_layer_3_loss: 0.8673libpng warning: sBIT: 
+invalid
+ 14/104 [===>..........................] - ETA: 31:11 - loss: 3.7052 - yolo_layer_1_loss: 0.9176 - yolo_layer_2_loss: 1.4672 - yolo_layer_3_loss: 1.3203libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 26:16 - loss: 3.2007 - yolo_layer_1_loss: 0.6597 - yolo_layer_2_loss: 1.3486 - yolo_layer_3_loss: 1.1924libpng warning: sBIT: 
+invalid
+ 38/104 [=========>....................] - ETA: 19:58 - loss: 3.0072 - yolo_layer_1_loss: 0.5008 - yolo_layer_2_loss: 1.1263 - yolo_layer_3_loss: 1.3801libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 14:47 - loss: 2.8706 - yolo_layer_1_loss: 0.3917 - yolo_layer_2_loss: 1.0676 - yolo_layer_3_loss: 1.4113libpng warning: sBIT: 
+invalid
+ 65/104 [=================>............] - ETA: 10:41 - loss: 2.9145 - yolo_layer_1_loss: 0.3452 - yolo_layer_2_loss: 1.0756 - yolo_layer_3_loss: 1.4937libpng warning: sBIT: 
+invalid
+ 77/104 [=====================>........] - ETA: 7:28 - loss: 2.8309 - yolo_layer_1_loss: 0.3556 - yolo_layer_2_loss: 1.0415 - yolo_layer_3_loss: 1.4338libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:54 - loss: 2.8253 - yolo_layer_1_loss: 0.3611 - yolo_layer_2_loss: 1.0631 - yolo_layer_3_loss: 1.4011libpng warning: sBIT: invalid
+103/104 [============================>.] - ETA: 16s - loss: 2.8755 - yolo_layer_1_loss: 0.3396 - yolo_layer_2_loss: 1.0871 - yolo_layer_3_loss: 1.4488libpng warning: sBIT: invalid
+104/104 [==============================] - 2016s 19s/step - loss: 2.8804 - yolo_layer_1_loss: 0.3427 - yolo_layer_2_loss: 1.0936 - yolo_layer_3_loss: 1.4441 - val_loss: 3.6692 - val_yolo_layer_1_loss: 0.5769 - val_yolo_layer_2_loss: 1.8231 - val_yolo_layer_3_loss: 1.5706
+Epoch 50/50
+ 12/104 [==>...........................] - ETA: 22:44 - loss: 3.0661 - yolo_layer_1_loss: 0.4303 - yolo_layer_2_loss: 1.2646 - yolo_layer_3_loss: 1.3712libpng warning: sBIT: 
+invalid
+ 25/104 [======>.......................] - ETA: 18:34 - loss: 2.7111 - yolo_layer_1_loss: 0.3383 - yolo_layer_2_loss: 1.0527 - yolo_layer_3_loss: 1.3201libpng warning: sBIT: 
+invalid
+ 39/104 [==========>...................] - ETA: 14:15 - loss: 2.7122 - yolo_layer_1_loss: 0.2321 - yolo_layer_2_loss: 1.1009 - yolo_layer_3_loss: 1.3793libpng warning: sBIT: 
+invalid
+ 51/104 [=============>................] - ETA: 12:41 - loss: 3.0942 - yolo_layer_1_loss: 0.3320 - yolo_layer_2_loss: 1.2177 - yolo_layer_3_loss: 1.5445libpng warning: sBIT: 
+invalid
+ 64/104 [=================>............] - ETA: 10:18 - loss: 2.9615 - yolo_layer_1_loss: 0.3331 - yolo_layer_2_loss: 1.1382 - yolo_layer_3_loss: 1.4903libpng warning: sBIT: 
+invalid
+ 81/104 [======================>.......] - ETA: 6:06 - loss: 2.9434 - yolo_layer_1_loss: 0.3545 - yolo_layer_2_loss: 1.1787 - yolo_layer_3_loss: 1.4102libpng warning: sBIT: invalid
+ 90/104 [========================>.....] - ETA: 3:55 - loss: 2.9678 - yolo_layer_1_loss: 0.3672 - yolo_layer_2_loss: 1.1961 - yolo_layer_3_loss: 1.4045libpng warning: sBIT: invalid
+104/104 [==============================] - 2069s 20s/step - loss: 2.9174 - yolo_layer_1_loss: 0.3549 - yolo_layer_2_loss: 1.1641 - yolo_layer_3_loss: 1.3983 - val_loss: 2.5260 - val_yolo_layer_1_loss: 0.2996 - val_yolo_layer_2_loss: 1.5092 - val_yolo_layer_3_loss: 1.4515
